@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
+        <script src="https://kit.fontawesome.com/e0fb997e46.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylereservia.css">
     <meta name="viewport" content="width=device-width"/>
     <title>Reservia</title>
-</head>
+    </head>
 
-<body>
-<div id="content">
-
-<header>
-
-<div class="en-tete">
+    <body>
+        <div id="bloc_page">
+        <header class="en-tete">
         <div id="logo"><img src="file:///C:/Users/Naziha/Desktop/P2_Abdellaoui_Naziha/Projet%202%20-%20Reservia/images/logo/Reservia.svg"alt="logo"/></div>
         
         <nav>
@@ -25,8 +23,12 @@
       <h2>En plein centre ville ou en pleine nature</h2>
      
 <div class="formulaire">
-<form><input type="search" name="search" placeholder="Marseille, France">Rechercher</form>
+<form>
 
+    <button type="submit">Rechercher</button>
+    <input type="search" name="search" placeholder="Marseille, France"></form>
+ 
+                <label for="filtres">Filtres</label>
                 <select name="budget" id="budget">
                     <option value="economique"selected>Economique</option>
                 </select>
@@ -42,26 +44,66 @@
                 <select name="animaux" id="animaux">
                     <option value="animaux_autorises"selected>Animaux autorisés</option>
                 </select>
-
-<i class="fas fa-heart"></i>
 </div>
-    </div>
+<p><i class="fas fa-info-circle"> Plus de 500 logements sont disponibles dans cette ville</i></p>
 
 
-<h2>Plus de 500 logements sont disponibles dans cette ville</h2>
-    <i class="fas fa-info-circle"></i>
-
-
-
-</div>
 </header>
 
- <div id="hebergement_marseille">Hébergements à Marseille</div>
-        <div id="activite_marseille">Activités à Marseille</div>
+<section>
+            <div id="hebergement_marseille">Hébergements à Marseille>
 
+                <a href="#" alt="photo">Auberge la Cannebière</a>
+                <a href="#" alt="photo">Hôtel du port</a>
+                <a href="#" alt="photo">Hôtel les mouettes</a>
+                <a href="#" alt="photo">Hôtel de la mer</a>
+                <a href="#" alt="photo">Auberge Le panier</a>
+                <a href="#" alt="photo">Hôtel chez Amina</a>
+                <p>Affichez plus</p>
+            </div>
+</section>
 
+            <aside class="popularite">Les plus populaires>
+                <a href="#" alt="photo">Hôtel Le soleil du matin</a>
+                <a href="#" alt="photo">Au coeur de l'eau<span>Chambres d'hôtes</span></a>
+                <a href="#" alt="photo">Hôtel Tout bleu et Blanc</a>
 
+            </aside>
 
-</div>
-    </html>
-</body>
+        <section>
+            <div id="activite_marseille">Activités à Marseille>
+                <a href="#" alt="photo">Vieux port</a>
+                <a href="#" alt="photo">Fort de pomègues</a>
+                <a href="#" alt="photo">îles du Frioul</a>
+                <a href="#" alt="photo">Parc National des Calanques</a>
+                <a href="#" alt="photo">Notre-Dame-de-la-Garde</a>
+                <a href="#" alt="photo">Parc Longchamp</a>
+            </div>
+
+        </section>
+
+        <footer>
+                <nav>
+                    <h2>A propos</h2>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+
+                    <h2>Nos hébergements</h2>
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+
+                    <h2>Assistance</h2>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </footer>    
+        </div>
+    </body>
+</html>
