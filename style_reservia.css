@@ -6,16 +6,19 @@
 }
 body
 {
-	margin-top:40px;
-	margin-right:20px;
-	margin-left:20px;
+margin-left: 50px;
+margin-right: 20px;
+margin-top: 40px;
+padding: 0;
 }
+
 header
 {
 	display: grid;
 	grid-template-columns:800px 400px;
-	grid-template-rows:1fr 1fr 25px 15px;
+	grid-template-rows:1fr 1fr 25px 50px;
 }
+
 header h1
 {
 	grid-column: 1 / 1;
@@ -30,6 +33,7 @@ header h3
 	grid-row: 4 / 4;
 	font-family:'Raleway Thin',sans-serif;
 	font-size: 0.9em;
+	padding-bottom: 60px;
 }
 .nav1, #logo
 {
@@ -43,33 +47,86 @@ grid-column: 2 / 3;
 grid-row: 1 / 2;
 display: flex;
 justify-content: space-around;
-align-items: flex-end;
 font-size: 1em;
 font-family: 'Raleway Light',sans-serif;
 text-decoration: none;
 }
 
-nav
+section
 {
 	display: grid;
-	grid-template-columns: 800px 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 900px 1fr;
+	grid-template-rows: 4fr;
+	grid-template-areas:
+	"a a"
+	"b b"
+	"c d"
+	"e e"
+
+}
+.barre_recherche:nth-child(1)
+{
+	grid-area:a;
+}
+.filtres:nth-child(2){
+	grid-area:b;
+}
+.hebergement_marseille:nth-child(3){
+	grid-area: c;
+}
+.les_plus_populaires:nth-child(4){
+	grid-area: d;
+}
+.activite_marseille:nth-child(5){
+	grid-area:e;
+}
+.barre_recherche
+{
+	display: inline-flex;
+	border: 1px solid #F2F2F2;
+	height: 40px;
+	border-radius: 10px 10px 10px 10px;
+	align-items:center;
+	justify-content: center;
+}
+.barre_recherche i.fas{
+	background-color: #F2F2F2;
+	border: #F2F2F2 solid;
+	border-radius: 8px 0 0 8px;
+	width: 40px;
+	height: 36px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+			
+}
+input 
+{
+	text-align: center;
+	font-family: 'Raleway Medium',sans-serif;
+	color: black;
+	border: none;
+	font-size: 0.9em;
+	height: 40px;
+}
+button
+{
+	border-radius: 0 10px 10px 0;
+	font-family: 'Raleway-light',sans-serif;
+	font-size: 0.9em;
+	height: 40px;
+	background-color: #0065FC;
+	color: white;
+	border:none;
 }
 
-nav .filtres
+label
 {
-	grid-column: 1 / 1;
-	grid-row: 2 / 3;
-	font-family: 'Raleway-Black',sans-serif;
-	font-weight: bold;
-	padding-top: 40px;
+	font-size: 1em;
 }
 
-.hebergement
-{
-	text-decoration: none;
-	color: #0065FC;
-}
+
+
 
 .hebergement a:hover
 {
@@ -94,14 +151,6 @@ i.fas
 	align-content: center;
 }
 
-.filtres li
-{
-border: 2px solid #DEEBFF;
-background-color:#DEEBFF;
-color:#0065FC;
-border-radius: 20px 20px 20px 20px;
-display: inline-block;
-}
 select:hover
 {
 	background-color: #0065FC;
@@ -115,13 +164,6 @@ select:hover
 	height: 30px;
 	font-size: 0.9em;
 	text-align: center;
-}
-select i.fas
-{
-	display: inline-block;
-	text-align: center;
-	border: 2px solid #F2F2F2;
-	border-left: none;
 }
 
 select {
@@ -171,45 +213,7 @@ select {
 	display: inline-block;
 }
 
-label
-{
-	font-size: 0.7em;
-}
-.filtres
-{
-	font-family: 'Raleway-thin',sans-serif;
-	font-size: 1em;
-	margin-top: 40px;
-	background-color: none;
-	color: black;
-	
-}
-.search_bare li
-{
-	display: inline-block;
-	vertical-align: top;
-	list-style-type: none;
-}
-input 
-{
-	text-align: center;
-	font-family: 'Raleway-light',sans-serif;
-	font-weight: bold;
-	color: black;
-	border: #F2F2F2 solid 2px;
-	font-size: 0.9em;
-	height: 35px;
-}
-button
-{
-	border-radius: 0 10px 10px 0;
-	font-family: 'Raleway-light',sans-serif;
-	font-size: 0.9em;
-	height: 35px;
-	background-color: #0065FC;
-	color: white;
-	border:none;
-}
+
 
 
 
