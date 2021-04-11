@@ -56,7 +56,8 @@ section
 {
 	display: grid;
 	grid-template-columns: 900px 1fr;
-	grid-template-rows: 4fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: auto;
 	grid-template-areas:
 	"a a"
 	"b b"
@@ -119,6 +120,32 @@ button
 	color: white;
 	border:none;
 }
+.filtres{
+	padding-top: 50px;
+	display:inline-flex;
+	justify-content: space-between;
+
+}
+
+.filtres div
+{
+	display: inline-block;
+	border: 2px solid #F2F2F2;
+	border-radius: 20px 20px 20px 20px;
+	height: 40px;
+	
+}
+
+.filtres div i.fas{
+	border: 10px solid #DEEBFF;
+	border-radius: 25px 25px 25px 25px;
+	height: 22px;
+	background-color: #DEEBFF;
+	color: #0065FC;
+}
+div select, div i.fas{
+	display: inline-block;
+}
 
 label
 {
@@ -126,92 +153,12 @@ label
 }
 
 
-
-
-.hebergement a:hover
-{
-	color: #0065FC;
-	border-top: 2px solid #0065FC;
-	padding-top: 40px;
-}
-.activites a:hover
-{
-	color:#0065FC;
-	border-top: 2px solid #0065FC;
-	padding-top: 40px;
-}
-.inscription a:hover
-{
-color:#0065FC;
-font-weight: bold;
-padding-top: 40px;
-}
-i.fas
-{
-	align-content: center;
-}
-
-select:hover
-{
-	background-color: #0065FC;
-	color: white;
-}
-
-#budget
-{
-	width: 110px;
-	border-radius: 0px 20px 20px 0px;
-	height: 30px;
-	font-size: 0.9em;
-	text-align: center;
-}
-
 select {
 -moz-appearance: none;
 -webkit-appearance: none;
-}
-#composition
-{
-	border: 2px solid #F2F2F2;
-	border-left: none;
-	width: 80px;
-	border-radius: 0px 20px 20px 0px;
-	height: 30px;
-	text-align: center;
-	font-size: 0.9em;
-}
-#composition i.fas
-{
-	display: inline-block;
-}
-#ambiance
-{
-	border: 2px solid #F2F2F2;
-	border-left: none;
-	width: 100px;
-	border-radius: 0px 20px 20px 0px;
-	height: 30px;
-	text-align: center;
-	font-size: 0.9em;
-}
-#ambiance i.fas
-{
-	display: inline-block;
+border: none;
 }
 
-#animaux
-{
-	border: 2px solid #F2F2F2;
-	width: 145px;
-	border-radius: 20px 20px 20px;
-	height: 30px;
-	text-align: center;
-	font-size: 0.9em;
-}
-#animaux i.fas
-{
-	display: inline-block;
-}
 
 
 
