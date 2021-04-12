@@ -105,7 +105,8 @@ button
 	font-family: 'Raleway semibold',sans-serif;
 	display: inline-block;
 	justify-content: flex-start;
-	align-items: center;	
+	align-items: center;
+	padding-top: 20px;
 }
 
 .filtres form{
@@ -114,63 +115,109 @@ button
 	align-items: flex-start;
 }
 
-.budget
+.budget i.fas
 {
-	border: 2px solid #F2F2F2;
-	border-radius: 20px 20px 20px 20px;
-	height: 40px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-}
-.composition{
-	border: 2px solid #F2F2F2;
-	border-radius: 20px 20px 20px 20px;
-	height: 40px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-}
-.ambiance{
-	border: 2px solid #F2F2F2;
-	border-radius: 20px 20px 20px 20px;
-	height: 40px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-
-}
-.animaux{
-	border: 2px solid #F2F2F2;
-	border-radius: 20px 20px 20px 20px;
-	height: 40px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-
-}
-
-#bouton_filtres i.fas {
 	border: 10px solid #DEEBFF;
-	border-radius: 25px 25px 25px 25px;
-	height: 22px;
+	border-radius: 20px 20px 20px 20px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #DEEBFF;
 	color: #0065FC;
+}
+.composition i.fas{
+	border: 10px solid #DEEBFF;
+	border-radius: 25px 25px 25px 25px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #DEEBFF;
+	color: #0065FC;
+}
+.ambiance i.fas{
+	border: 10px solid #DEEBFF;
+	border-radius: 20px 20px 20px 20px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #DEEBFF;
+	color: #0065FC;
+}
+.animaux i.fas{
+	border: 10px solid #DEEBFF;
+	border-radius: 20px 20px 20px 20px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #DEEBFF;
+	color: #0065FC;
+}
+
+form i.fas {
+	display: flex;
+	align-items: center;
+}
+label{
+	font-size: 0.9em;
 }
 label, .filtres form
 {
-	font-size: 1em;
 	align-items: center;
 }
 select {
 -moz-appearance: none;
 -webkit-appearance: none;
-border: none;
-width: 130px;
+border:none;
+min-width: 80px;
+max-width: 220px;
+font-size: 1em;
 }
+
+.budget{
+	border: 2px solid #F2F2F2;
+	border-radius: 25px 25px 25px 25px;
+	text-align: center;
+}
+.composition{
+	border: 2px solid #F2F2F2;
+	border-radius: 25px 25px 25px 25px;
+	text-align: center;
+	
+}
+.ambiance{
+	border: 2px solid #F2F2F2;
+	border-radius: 25px 25px 25px 25px;
+	text-align: center;
+}
+.animaux{
+	border: 2px solid #F2F2F2;
+	border-radius: 25px 25px 25px 25px;
+	text-align: center;
+}
+.room_available{
+	grid-column: 1 / 1;
+	grid-row: 3 / 3;
+	font-family: 'Raleway Thin',sans-serif;
+	font-weight: bold;
+	display: inline-flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.room_available i.fas{
+	border: #F2F2F2 solid;
+	border-radius: 25px 25px 30px 30px;
+	color: white;
+	background-color: #0065FC;
+	font-size: 1.2em;
+}
+.room_available p{
+	position: relative;
+	left: 5px;
+}
+
+
+
+
 
 
 
