@@ -76,32 +76,37 @@ font-family: 'Raleway Light',sans-serif;
 	padding-top: 20px;
 	font-weight: bold;
 }
+
+
+
+
 .budget:hover{
 	color:white;
-	background-color:#DEEBFF;
+	background-color:#0065FC;
 	font-weight:bold;
 }
 .composition:hover{
 	color:white;
-	background-color:#DEEBFF;
+	background-color:#0065FC;
+	font-weight: bold;
 }
 .ambiance:hover{
-	color:#0065FC;
-	background-color:#DEEBFF;
+	color:white;
+	background-color:#0065FC;
+	font-weight: bold;
 }
 .animaux:hover{
-	background-color: #DEEBFF;
-	color: #0065FC;
+	background-color:#0065FC;
+	color:white;
 	font-weight: bold;
 }
-select:hover{
-	background-color: #DEEBFF;
-	color: #0065FC;
+#bouton_filtres:hover{
+	background-color: #0065FC;
+	color: white;
 	font-weight: bold;
-	border: 3px;
 }
 
-section
+section .search_bare
 {
 	display: grid;
 	grid-template-columns: 800px 1fr;
@@ -116,7 +121,7 @@ section
 	height: 40px;
 	border-radius: 10px 10px 10px 10px;
 	align-items:center;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .barre_recherche i.fas{
 	background-color: #F2F2F2;
@@ -148,135 +153,90 @@ button
 	color: white;
 	border:none;
 }
+
+section .filtres{
+	display: grid;
+	grid-template-columns: 80px 200px 150px 200px 230px;
+	grid-template-rows: 1fr 1fr;
+	column-gap: 20px;
+	
+}
+
 .filtres{
-	grid-column: 1 / span 1;
-	grid-row: 2 / 3;
+	grid-column: 1 / span 6;
+	grid-row: 1 / 2;
 	font-family: 'Raleway semibold',sans-serif;
-	display: inline-block;
-	justify-content: flex-start;
-	align-items: center;
-	padding-top: 20px;
-}
-
-.filtres form{
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-}
-
-.budget i.fas
-{
-	border: 10px solid #DEEBFF;
-	border-radius: 20px 20px 20px 20px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #DEEBFF;
-	color: #0065FC;
-}
-.composition i.fas{
-	border: 10px solid #DEEBFF;
-	border-radius: 20px 20px 20px 20px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #DEEBFF;
-	color: #0065FC;
-}
-.ambiance i.fas{
-	border: 10px solid #DEEBFF;
-	border-radius: 20px 20px 20px 20px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #DEEBFF;
-	color: #0065FC;
-}
-.animaux i.fas{
-	border: 10px solid #DEEBFF;
-	border-radius: 20px 20px 20px 20px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #DEEBFF;
-	color: #0065FC;
-}
-
-form i.fas {
-	display: flex;
+	display:inline-flex;
+	margin-top: 25px;
 	align-items: center;
 }
-label{
-	font-size: 0.9em;
+.filtres h1{
+	font-size: 1em;
 }
-label, .filtres form
-{
-	align-items: center;
-}
-select {
--moz-appearance: none;
--webkit-appearance: none;
-border:none;
-width: auto;
-font-size: 0.8em;
-align-content: center;
+#bouton_filtres{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
 }
 
 .budget{
-	border: 2px solid #F2F2F2;
-	border-radius: 25px 25px 25px 25px;
-	text-align: center;
-	width: 150px;
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	border:solid #F2F2F2 2px;
+	min-width: auto;
+	max-width: 200px;
+	border-radius: 30px 30px 30px 30px;
 }
 .composition{
-	border: 2px solid #F2F2F2;
-	border-radius: 25px 25px 25px 25px;
-	text-align: center;
-	width: 120px;
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	border:solid #F2F2F2 2px;
+	min-width: auto;
+	max-width: 200px;
+	border-radius: 30px 30px 30px 30px;
 }
 .ambiance{
-	border: 2px solid #F2F2F2;
-	border-radius: 25px 25px 25px 25px;
-	text-align: center;
-	width: 150px;
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	border:solid #F2F2F2 2px;
+	min-width: auto;
+	max-width: 200px;
+	border-radius: 30px 30px 30px 30px;
 }
 .animaux{
-	border: 2px solid #F2F2F2;
-	border-radius: 25px 25px 25px 25px;
-	text-align: center;
-	width: 188px;
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	border:solid #F2F2F2 2px;
+	min-width: auto;
+	max-width: 200px;
+	border-radius: 30px 30px 30px 30px;
 }
-.room_available{
-	grid-column: 1 / 1;
-	grid-row: 3 / 3;
+
+section .room_available{
+	grid-column: 1 / span 5;
+	grid-row: 2 / 3;
+	display: inline-block;
 	font-family: 'Raleway Thin',sans-serif;
 	font-weight: bold;
-	display: inline-flex;
-	justify-content:flex-start;
-	align-items:center;
 }
-.room_available i.fas{
-	border-radius: 25px 25px 25px 25px;
-	color: white;
-	background-color: #0065FC;
-	font-size: 1.2em;
-}
-.room_available p{
-	position: relative;
-	left: 5px;
-}
+
+
+
+
+
+
 
 .hebergement_marseille img{
 width: 220px;
