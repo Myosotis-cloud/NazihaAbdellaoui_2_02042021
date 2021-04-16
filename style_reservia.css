@@ -7,7 +7,7 @@
 body
 {
 margin-left: 50px;
-margin-right: 20px;
+margin-right: 50px;
 margin-top: 40px;
 padding: 0;
 }
@@ -17,6 +17,7 @@ header
 	display: grid;
 	grid-template-columns:800px 400px;
 	grid-template-rows:1fr 1fr 25px 50px;
+	
 }
 
 header h1
@@ -49,7 +50,55 @@ display: flex;
 justify-content: space-around;
 font-size: 1em;
 font-family: 'Raleway Light',sans-serif;
-text-decoration: none;
+}
+.nav1 a{
+	text-decoration: none;
+}
+.hebergement a{
+	color: black;
+}
+.activites a{
+	color: black;
+}
+.inscription a{
+	color: #0065FC;
+	font-weight: bold;
+}
+.hebergement a:hover{
+	color: #0065FC;
+	border-top: 2px solid;
+	padding-top: 20px;
+	font-weight: bold;
+}
+.activites a:hover{
+	color: #0065FC;
+	border-top: 2px solid;
+	padding-top: 20px;
+	font-weight: bold;
+}
+.budget:hover{
+	color:white;
+	background-color:#DEEBFF;
+	font-weight:bold;
+}
+.composition:hover{
+	color:white;
+	background-color:#DEEBFF;
+}
+.ambiance:hover{
+	color:#0065FC;
+	background-color:#DEEBFF;
+}
+.animaux:hover{
+	background-color: #DEEBFF;
+	color: #0065FC;
+	font-weight: bold;
+}
+select:hover{
+	background-color: #DEEBFF;
+	color: #0065FC;
+	font-weight: bold;
+	border: 3px;
 }
 
 section
@@ -127,7 +176,7 @@ button
 }
 .composition i.fas{
 	border: 10px solid #DEEBFF;
-	border-radius: 25px 25px 25px 25px;
+	border-radius: 20px 20px 20px 20px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -168,31 +217,46 @@ select {
 -moz-appearance: none;
 -webkit-appearance: none;
 border:none;
-min-width: 80px;
-max-width: 220px;
-font-size: 1em;
+width: auto;
+font-size: 0.8em;
+align-content: center;
 }
 
 .budget{
 	border: 2px solid #F2F2F2;
 	border-radius: 25px 25px 25px 25px;
 	text-align: center;
+	width: 150px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 .composition{
 	border: 2px solid #F2F2F2;
 	border-radius: 25px 25px 25px 25px;
 	text-align: center;
-	
+	width: 120px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 .ambiance{
 	border: 2px solid #F2F2F2;
 	border-radius: 25px 25px 25px 25px;
 	text-align: center;
+	width: 150px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 .animaux{
 	border: 2px solid #F2F2F2;
 	border-radius: 25px 25px 25px 25px;
 	text-align: center;
+	width: 188px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 .room_available{
 	grid-column: 1 / 1;
@@ -204,12 +268,10 @@ font-size: 1em;
 	align-items:center;
 }
 .room_available i.fas{
-	border: #F2F2F2 solid;
-	border-radius: 25px 25px 30px 30px;
+	border-radius: 25px 25px 25px 25px;
 	color: white;
 	background-color: #0065FC;
 	font-size: 1.2em;
-	box-shadow: 4px black;
 }
 .room_available p{
 	position: relative;
@@ -217,39 +279,108 @@ font-size: 1em;
 }
 
 .hebergement_marseille img{
-width: 225px;;
+width: 220px;
 height: 100px;
 object-fit: cover;
-border: 4px white solid;
-border-bottom: white 1px solid;
+border: 5px white solid;
+border-bottom: white 5px solid;
 border-radius: 15px 15px 0px 0px;
-display:flex;
-align-items: center;
-
+background-color: white;
+}
+.hotel_description, .hebergement_marseille img{
+	display: block;
+	border: white solid 5px;
+}
+.hotel_description p, .price{
+	display: inline-block;
+}
+span{
+	font-family: 'Raleway-Black',sans-serif;
+	font-size: 0.9em;
 }
 
-section .hebergement_marseille{
-	background-color: #F2F2F2;
-	border-radius: 20px 20px 20px 20px;
-	margin-top: 20px;
-	gap: 3px;
-	height: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 40px 1fr 1fr;
-	grid-template-areas: 
-	"a a a"
-	"b c d"
-	"e f g";
-	}
+section a:hover{
+color: #0065FC;
+}
+.hotel_description:hover{
+color: #0065FC;
+font-weight: bold;
+}
 
-
-.hebergement_marseille h2{
+	section .hebergement_marseille{
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: #F2F2F2;
+		border-radius: 20px 20px 20px 20px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 40px 1fr 1fr;
+		grid-template-areas: 
+		"a a a"
+		"b c d"
+		"e f g";
+}
+				
+section .hebergement_marseille h2{
 	font-family: 'Raleway-Black', sans-serif;
 	font-size:larger;
-	position: top;
 	grid-area: a;
 }
+section .hebergement_marseille, aside.populaire{
+	margin:10px;
+}
+aside.populaire{
+	background-color: #F2F2F2;
+	padding-left: 30px;
+	padding-right: 30px;
+	gap: 10px;
+	border-radius: 20px 20px 20px 20px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 40px 1fr 1fr 1fr;
+		grid-template-areas: 
+		"a"
+		"b"
+		"c"
+		"d";
+}
+aside h2{
+	grid-area: a;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	font-family: 'Raleway-Black', sans-serif;
+	font-size:larger;
+	display:inline-flex;
+	justify-content: flex-start;
+}
+
+aside .graph_icon{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	display:inline-flex;
+	justify-content: flex-end;
+	position:relative;
+	left: 29%;
+
+}
+#soleil_matin{
+	grid-area: b;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	display: flex;
+	justify-content: center;
+}
+#coeur_eau{
+	grid-area: c;
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+}
+#bleu_blanc{
+	grid-area: d;
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
+}
+
 #la_cannebiere{
 	grid-area: b;
 }
@@ -270,32 +401,127 @@ section .hebergement_marseille{
 }
 section a{
 	text-decoration: none;
-	
+	box-shadow: 0 0 10px 6px #b1b1b14b;
+    transition: box-shadow 0.2s;
+	cursor: pointer;
 }
+
 .hotel_description h3{
 	font-family: 'Raleway-Black',sans-serif;
 	font-size: 0.9em;
-	text-decoration: none;
+}
+.hotel_description p{
+	font-family: 'Raleway Light',sans-serif;
+	font-size: 0.7em;
+	color: black;
 }
 .hotel_description{
-	border: white 10px solid;
-	border-radius: 0px 0px 15px 15px;
+	border: white solid;
+	width: 225px;
+	display:block;
+	flex-direction: column;
+	text-align:left;
 	background-color: white;
-	width: 215px;
-	height: 60px;
-	color: black;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 }
-section .price, p{
-	display:inline-block;
-	font-family:'Raleway Thin',sans-serif;
-	font-size: 0.8em;
+a:-webkit-any-link {
+	cursor: pointer;
 }
+
 .stars_icon{
 	font-size: 0.7em;
 }
+
+.populaire img{
+		width: 110px;
+		height: 130px;
+		object-fit: cover;
+		border-radius: 15px 0px 0px 15px;
+		float: left;
+}
+.aside_details h3{
+	font-family: 'Raleway Black',sans-serif;
+	font-size: 0.9em;
+	color: black;
+}
+.aside_details{
+	display:flex;
+	border: white 3px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: white;
+	flex-wrap: wrap;
+}
+.aside_details p{
+	font-family: 'raleway Light',sans-serif;
+	font-size: 0.7em;
+	color: black;
+}
+
+.title_p{
+	display: block;
+}
+aside .stars_icon{
+display: inline-block;
+}
+
+section .activite_marseille{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	margin-top: 100px;
+	grid-template-areas:
+	"a a a a"
+	"b c d e"
+	"b f d g";
+}
+
+.activite_marseille img{
+	width: 100%;
+	height: 220px;
+	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
+}
+.activite_marseille h2{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	grid-area: a;
+}
+#vieux_port{
+	grid-column: 1 / 2;
+	grid-row: 2 / span 4;
+	grid-area: b;
+}
+#pomegues{
+	
+	grid-area:c;
+}
+#Frioul{
+
+grid-area: f;
+}
+#Parc_National_Calanques{
+	grid-area: d;
+}
+#Notre-Dame{
+	grid-area: e;
+}
+#Longchamp{
+	grid-area: g;
+}
+
+
+.footer h2{
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+footer{
+	list-style-type: none;
+}
+
+
+
+
+
 
 
 
