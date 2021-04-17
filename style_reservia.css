@@ -62,8 +62,13 @@ font-family: 'Raleway Light',sans-serif;
 }
 .inscription a{
 	color: #0065FC;
-	font-weight: bold;
+	font-family: 'raleway bold',sans-serif;
 }
+.inscription a:hover{
+    text-decoration:underline;
+	border-bottom: 1px solid #0065FC;
+}
+
 .hebergement a:hover{
 	color: #0065FC;
 	border-top: 2px solid;
@@ -76,9 +81,6 @@ font-family: 'Raleway Light',sans-serif;
 	padding-top: 20px;
 	font-weight: bold;
 }
-
-
-
 
 .budget:hover{
 	color:white;
@@ -143,6 +145,9 @@ input
 	font-size: 0.9em;
 	height: 40px;
 }
+input:focus{
+	background-color: #deebff;
+}
 button
 {
 	border-radius: 0 10px 10px 0;
@@ -152,6 +157,16 @@ button
 	background-color: #0065FC;
 	color: white;
 	border:none;
+}
+button:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+    transition: box-shadow 0.2s;
+}
+
+i.fa-map-marker-alt:hover{
+	font-weight: bold;
+	color: darkgrey;
+	background-color: white;
 }
 
 section .filtres{
@@ -230,12 +245,31 @@ section .room_available{
 	display: inline-block;
 	font-family: 'Raleway Thin',sans-serif;
 	font-weight: bold;
+	padding-top: 20px;
+}
+.room_available p{
+	position: relative;
+	left: 8px;
+}
+i.fa-info-circle{
+	border: 1px solid grey;
+	font-size: 1.4em;
+    border-radius: 50%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+    text-align: center;
+    color:white;
+	background-color:#0065FC;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
 }
 
+i.fa-info-circle, .room_available p{
+	display: inline-block;
 
-
-
-
+}
 
 
 .hebergement_marseille img{
