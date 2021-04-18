@@ -265,26 +265,31 @@ i.fa-info-circle{
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
 }
-
 i.fa-info-circle, .room_available p{
 	display: inline-block;
-
 }
 
-
-.hebergement_marseille img{
-width: 220px;
-height: 100px;
+section .HEBERGEMENT{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+aside{
+	grid-column: 4 / 5;
+}
+.hebergement_marseille_container{
+	background-color:#F2F2F2;
+}
+.logement-carte{
+width: 250px;
+height: 110px;
 object-fit: cover;
 border: 5px white solid;
 border-bottom: white 5px solid;
 border-radius: 15px 15px 0px 0px;
 background-color: white;
 }
-.hotel_description, .hebergement_marseille img{
-	display: block;
-	border: white solid 5px;
-}
+
 .hotel_description p, .price{
 	display: inline-block;
 }
@@ -292,7 +297,9 @@ span{
 	font-family: 'Raleway-Black',sans-serif;
 	font-size: 0.9em;
 }
-
+section a{
+	text-decoration:none;
+}
 section a:hover{
 color: #0065FC;
 }
@@ -301,231 +308,107 @@ color: #0065FC;
 font-weight: bold;
 }
 
-	section .hebergement_marseille{
-		padding-left: 20px;
-		padding-right: 20px;
-		background-color: #F2F2F2;
-		border-radius: 20px 20px 20px 20px;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 40px 1fr 1fr;
-		grid-template-areas: 
-		"a a a"
-		"b c d"
-		"e f g";
-}
-				
-section .hebergement_marseille h2{
+.hebergement_marseille_container h2{
 	font-family: 'Raleway-Black', sans-serif;
 	font-size:larger;
-	grid-area: a;
-}
-section .hebergement_marseille, aside.populaire{
-	margin:10px;
-}
-aside.populaire{
-	background-color: #F2F2F2;
-	padding-left: 30px;
-	padding-right: 30px;
-	gap: 10px;
-	border-radius: 20px 20px 20px 20px;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 40px 1fr 1fr 1fr;
-		grid-template-areas: 
-		"a"
-		"b"
-		"c"
-		"d";
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 }
 aside h2{
-	grid-area: a;
-	grid-column: 1 / 2;
+	grid-column: 4 / 5;
 	grid-row: 1 / 2;
 	font-family: 'Raleway-Black', sans-serif;
 	font-size:larger;
 	display:inline-flex;
 	justify-content: flex-start;
 }
-
 aside .graph_icon{
-	grid-column: 1 / 2;
+	grid-column: 4 / 5;
 	grid-row: 1 / 2;
 	display:inline-flex;
 	justify-content: flex-end;
 	position:relative;
-	left: 29%;
-
+	left:10%;
 }
 #soleil_matin{
-	grid-area: b;
-	grid-column: 1 / 2;
+	grid-column: 4 / 5;
 	grid-row: 2 / 3;
-	display: flex;
-	justify-content: center;
 }
 #coeur_eau{
-	grid-area: c;
-	grid-column: 1 / 2;
+	grid-column: 4 / 5;
 	grid-row: 3 / 4;
 }
 #bleu_blanc{
-	grid-area: d;
-	grid-column: 1 / 2;
-	grid-row: 4 / 5;
+	grid-column: 4 / 5;
+	grid-row: 4 /5;
 }
-
-#la_cannebiere{
-	grid-area: b;
-}
-#du_port{
-	grid-area: c;
-}
-#les_mouettes{
-	grid-area: d;
-}
-#la_mer{
-	grid-area: e;
-}
-#le_panier{
-	grid-area: f;
-}
-#chez_amina{
-	grid-area: g;
-}
-section a{
-	text-decoration: none;
-	box-shadow: 0 0 10px 6px #b1b1b14b;
-    transition: box-shadow 0.2s;
-	cursor: pointer;
+.logement-carte-container img, .hotel_description{
+	display: block;
 }
 
 .hotel_description h3{
 	font-family: 'Raleway-Black',sans-serif;
 	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
 }
 .hotel_description p{
 	font-family: 'Raleway Light',sans-serif;
+	margin: 0;
+	padding: 0;
 	font-size: 0.7em;
 	color: black;
 }
 .hotel_description{
 	border: white solid;
-	width: 225px;
-	display:block;
-	flex-direction: column;
-	text-align:left;
+	border-radius: 0 0 15px 15px;
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-left: 10px;
+	width: 245px;
 	background-color: white;
+	color: black;
+	display: flex;
+	flex-direction: column;
 }
-a:-webkit-any-link {
-	cursor: pointer;
+.hotel_description .stars_icon{
+	padding-top: 5px;
 }
-
+.hebergement_marseille img, .hotel_description{
+	display: block;
+}
 .stars_icon{
 	font-size: 0.7em;
 }
 
-.populaire img{
-		width: 110px;
-		height: 130px;
+.photo_populaire img{
+		width: 150px;
+		height: 150px;
 		object-fit: cover;
 		border-radius: 15px 0px 0px 15px;
-		float: left;
 }
-.aside_details h3{
+aside h3{
 	font-family: 'Raleway Black',sans-serif;
 	font-size: 0.9em;
 	color: black;
 }
-.aside_details{
-	display:flex;
+.description_pop{
 	border: white 3px solid;
 	border-radius: 15px 15px 15px 15px;
 	background-color: white;
 	flex-wrap: wrap;
-}
-.aside_details p{
 	font-family: 'raleway Light',sans-serif;
 	font-size: 0.7em;
 	color: black;
 }
 
-.title_p{
-	display: block;
-}
 aside .stars_icon{
 display: inline-block;
 }
 
-section .activite_marseille{
-	display: grid;
-	grid-template-columns:1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	margin-top: 100px;
-	grid-template-areas:
-	"a a a a"
-	"b c d e"
-	"b f d g";
+.activite_marseille{
+	margin-top: 800px;
 }
-
-.activite_marseille img{
-	width: 100%;
-	height: 220px;
-	border-radius: 15px 15px 0px 0px;
-	object-fit: cover;
-}
-.activite_marseille h2{
-	grid-column: 1 / 2;
-	grid-row: 1 / 2;
-	grid-area: a;
-}
-#vieux_port{
-	grid-column: 1 / 2;
-	grid-row: 2 / span 4;
-	grid-area: b;
-}
-#pomegues{
-	
-	grid-area:c;
-}
-#Frioul{
-
-grid-area: f;
-}
-#Parc_National_Calanques{
-	grid-area: d;
-}
-#Notre-Dame{
-	grid-area: e;
-}
-#Longchamp{
-	grid-area: g;
-}
-
-
-.footer h2{
-	display: inline-flex;
-	justify-content: space-around;
-	flex-direction: row;
-}
-footer{
-	list-style-type: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
