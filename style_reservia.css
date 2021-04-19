@@ -6,10 +6,10 @@
 }
 body
 {
-margin-left: 50px;
-margin-right: 50px;
+margin-left: 0;
+margin-right: 0;
 margin-top: 40px;
-padding: 0;
+padding:0;
 }
 
 header
@@ -42,8 +42,7 @@ header h3
 	vertical-align: top;
 }
 
-.nav1
-{
+.nav1{
 grid-column: 2 / 3;
 grid-row: 1 / 2;
 display: flex;
@@ -51,6 +50,7 @@ justify-content: space-around;
 font-size: 1em;
 font-family: 'Raleway Light',sans-serif;
 }
+
 .nav1 a{
 	text-decoration: none;
 }
@@ -64,21 +64,15 @@ font-family: 'Raleway Light',sans-serif;
 	color: #0065FC;
 	font-family: 'raleway bold',sans-serif;
 }
-.inscription a:hover{
-    text-decoration:underline;
-	border-bottom: 1px solid #0065FC;
-}
 
 .hebergement a:hover{
 	color: #0065FC;
 	border-top: 2px solid;
-	padding-top: 20px;
 	font-weight: bold;
 }
 .activites a:hover{
 	color: #0065FC;
 	border-top: 2px solid;
-	padding-top: 20px;
 	font-weight: bold;
 }
 
@@ -269,18 +263,74 @@ i.fa-info-circle, .room_available p{
 	display: inline-block;
 }
 
-section .HEBERGEMENT{
+.hebergement{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-aside{
-	grid-column: 4 / 5;
+	grid-template-rows: 50px 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	grid-auto-columns: auto;
+	grid-template-areas:
+	"a a a A"
+	"a a a A"
+	"a a a A"
+	"a a a A";
 }
 .hebergement_marseille_container{
-	background-color:#F2F2F2;
+	grid-area: a;
 }
-.logement-carte{
+.populaire{
+	grid-area: A;
+	background-color: #F2F2F2;
+	margin-right: 20px;
+	width: 350px;
+}
+.photo_populaire, .description_pop{
+	display:inline-block;
+	margin-top: 0;
+	padding-top: 0;
+	
+
+}
+.hebergement_marseille_container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50px 1fr 1fr 1fr;
+	grid-template-areas: 
+	"h2 h2 h2"
+	"cannebiere port mouettes"
+	"mer panier amina"
+	"following-sections following_sections following_sections";
+}
+
+.hebergement_marseille_container h2{
+	font-family: 'Raleway-Black', sans-serif;
+	font-size:larger;
+	grid-area: h2;
+}
+
+.next_section{
+	grid-area: following-sections;
+}
+#chez_amina{
+	grid-area: amina;
+}
+#les_mouettes{
+	grid-area: mouettes;
+}
+#la_cannebiere{
+	grid-area: cannebiere;
+}
+#le_panier{
+	grid-area: panier;
+}
+#le_port{
+	grid-area: port;
+}
+#la_mer{
+	grid-area: mer;
+}
+
+.hebergement_marseille_container img{
 width: 250px;
 height: 110px;
 object-fit: cover;
@@ -303,45 +353,12 @@ section a{
 section a:hover{
 color: #0065FC;
 }
+
 .hotel_description:hover{
 color: #0065FC;
 font-weight: bold;
 }
 
-.hebergement_marseille_container h2{
-	font-family: 'Raleway-Black', sans-serif;
-	font-size:larger;
-	grid-column: 1 / 2;
-	grid-row: 1 / 2;
-}
-aside h2{
-	grid-column: 4 / 5;
-	grid-row: 1 / 2;
-	font-family: 'Raleway-Black', sans-serif;
-	font-size:larger;
-	display:inline-flex;
-	justify-content: flex-start;
-}
-aside .graph_icon{
-	grid-column: 4 / 5;
-	grid-row: 1 / 2;
-	display:inline-flex;
-	justify-content: flex-end;
-	position:relative;
-	left:10%;
-}
-#soleil_matin{
-	grid-column: 4 / 5;
-	grid-row: 2 / 3;
-}
-#coeur_eau{
-	grid-column: 4 / 5;
-	grid-row: 3 / 4;
-}
-#bleu_blanc{
-	grid-column: 4 / 5;
-	grid-row: 4 /5;
-}
 .logement-carte-container img, .hotel_description{
 	display: block;
 }
@@ -375,9 +392,7 @@ aside .graph_icon{
 .hotel_description .stars_icon{
 	padding-top: 5px;
 }
-.hebergement_marseille img, .hotel_description{
-	display: block;
-}
+
 .stars_icon{
 	font-size: 0.7em;
 }
@@ -387,6 +402,7 @@ aside .graph_icon{
 		height: 150px;
 		object-fit: cover;
 		border-radius: 15px 0px 0px 15px;
+		float: left;
 }
 aside h3{
 	font-family: 'Raleway Black',sans-serif;
@@ -395,20 +411,33 @@ aside h3{
 }
 .description_pop{
 	border: white 3px solid;
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 0px 15px 15px 0px;
 	background-color: white;
-	flex-wrap: wrap;
 	font-family: 'raleway Light',sans-serif;
 	font-size: 0.7em;
 	color: black;
+	height: 150px;
+	width: 180px;
+}
+aside h2{
+	
+	font-family: 'Raleway-Black', sans-serif;
+	font-size:larger;
+	display:inline-flex;
+	justify-content: flex-start;
+}
+aside .graph_icon{
+	grid-column: 4 / 5;
+	grid-row: 1 / 2;
+	display:inline-flex;
+	justify-content: flex-end;
+	position:relative;
+	left:10%;
 }
 
 aside .stars_icon{
 display: inline-block;
 }
 
-.activite_marseille{
-	margin-top: 800px;
-}
 
 
