@@ -8,7 +8,8 @@ body
 {
 margin-left: 50px;
 margin-right: 20px;
-margin-top: 50px;
+margin-top: 80px;
+padding: 0;
 }
 
 header
@@ -280,7 +281,7 @@ i.fa-info-circle, .room_available p{
 	grid-area: a;
 	background-color: #F2F2F2;
 	border-radius: 15px 15px 15px 15px;
-	margin-left: 20px;
+	margin-left: 50px;
 	padding-left: 20px;
 }
 .logement_carte{
@@ -297,20 +298,17 @@ i.fa-info-circle, .room_available p{
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
-	padding: 10px;
 }
 aside{
-	margin-right: 30px;
+	margin-right: 50px;
 }
 .populaire{
 	grid-area: A;
 	background-color: #F2F2F2;
 	border-radius: 15px 15px 15px 15px;
-	margin-right: 15px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-right: 20px;
-	padding-left: 20px;
 	width: 300px;
 	grid-column: 4 / 5;
 	display:flex;
@@ -415,6 +413,7 @@ aside .graph_icon{
 	width: 130px;
 	height: 140px;
 	object-fit: cover;
+	object-position: center;
 	border-radius: 15px 0px 0px 15px;
 }
 
@@ -483,6 +482,7 @@ aside p{
 width: 230px;
 height: 110px;
 object-fit: cover;
+object-position: center;
 border: 5px white solid;
 border-bottom: white 5px solid;
 border-radius: 15px 15px 0px 0px;
@@ -540,16 +540,198 @@ section a{
 .hotel_description .stars_icon{
 	padding-top: 5px;
 }
-
 .stars_icon{
 	font-size: 0.7em;
 }
 
-#activite_marseille img{
-	height: 200px;
-	width: 250px;
+.activite_marseille_container{
+	align-items:flex-end;
+	padding-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 50px 1fr 1fr;
+	grid-template-areas: 
+	"h2 h2 h2 h2"
+	"vieux_port fort_pomegues Parc_national Notre_dame"
+	"vieux_port frioul Parc_national longchamp";
+}
+.activite_marseille_container h2{
+	grid-area: h2;
+	font-family: 'Raleway-Black',sans-serif;
+	font-size:larger;
+	padding-left: 15px;
+}
+.gallery1{
+	grid-area: vieux_port;
+	grid-column: 1 / 2;
+	grid-row: 2 / 4;
+	display: block;
+	margin:auto;
+	padding-bottom: auto;
+	background-color: #F2F2F2;
+	border-radius: 15px 15px 15px 15px;
 	object-fit: cover;
 	object-position: center;
 }
-
-
+.gallery1:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+    transition: box-shadow 0.2s;
+	box-sizing: border-box;
+	margin: auto;
+	padding-bottom: auto;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery1 img{
+	width: 270px;
+	height: 350px;
+	margin: 0;
+	padding: 0;
+}
+.gallery2{
+	grid-area: fort_pomegues;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	display: block;
+	margin:auto;
+	padding: auto;
+	background-color: #F2F2F2;
+	border-radius: 15px 15px 15px 15px;
+	object-fit: cover;
+	object-position: center;
+}
+.gallery2:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+    transition: box-shadow 0.2s;
+	margin:auto;
+	padding: auto;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery2 img{
+	width: 270px;
+	height: 170px;
+}
+.gallery3{
+	grid-area: frioul;
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+	display: block;
+	margin: auto;
+	padding-bottom: auto;
+	background-color: #F2F2F2;
+	object-fit: cover;
+	object-position: center;
+	
+}
+.gallery3:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+    transition: box-shadow 0.2s;
+	margin: auto;
+	padding-bottom: auto;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery3 img{
+	width: 270px;
+	height: 130px;
+	margin: 0;
+	padding: 0;
+}
+.gallery4{
+	grid-area: Parc_national;
+	grid-column: 3 / 4;
+	grid-row: 2 / span 4;
+	display: block;
+	margin: auto;
+	padding-bottom: auto;
+	object-fit: cover;
+	object-position: center;
+}
+.gallery4:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+    transition: box-shadow 0.2s;
+	margin:auto;
+	padding-bottom:auto;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery4 img{
+	width: 270px;
+	height: 350px;
+	margin: 0;
+	padding: 0;
+}
+.gallery5{
+	grid-area: Notre_dame;
+	grid-column: 4 / 5;
+	grid-row: 2 / 3;
+	display: block;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	margin: auto;
+	padding-bottom: auto;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery5:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+    transition: box-shadow 0.2s;
+	margin:auto;
+	padding-bottom:auto;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery5 img{
+	width: 270px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+}
+.gallery6{
+	grid-area: longchamp;
+	grid-column: 4 / 5;
+	grid-row: 3 / 4;
+	display: block;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	margin: auto;
+	padding-bottom: auto;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery6:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+    transition: box-shadow 0.2s;
+	margin:auto;
+	padding-bottom:auto;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery6 img{
+	width: 270px;
+	height: 130px;
+	margin: 0;
+	padding: 0;
+}
+#activite_marseille img{
+	border-radius: 15px 15px 0 0;
+	object-fit: cover;
+	object-position: center;
+	display: flex;
+}
+.description_activite{
+	font-family: 'Raleway-Black',sans-serif;
+	height: 40px;
+	font-size: 0.7em;
+	padding-left: 15px;
+	align-items: center;
+	box-sizing: border-box;
+	border: 1px #F2F2F2 solid;
+	background-color: white;
+	border-radius: 0 0 15px 15px;
+	display: flex;
+}
+#activite_marseille a{
+	color: black;
+}
+#activite_marseille a:hover{
+	color:#0065FC;
+}
