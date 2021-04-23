@@ -11,13 +11,12 @@ margin-right: 20px;
 margin-top: 80px;
 padding: 0;
 }
-
+/* ******DEBUT HEADER********* */
 header
 {
 	display: grid;
 	grid-template-columns:800px 400px;
 	grid-template-rows:1fr 1fr 25px 50px;
-	
 }
 
 header h1
@@ -75,7 +74,9 @@ font-family: 'Raleway Light',sans-serif;
 	border-top: 2px solid;
 	font-weight: bold;
 }
+/* ****FIN HEADER****** */
 
+/* ****DEBUT FILTRES****** */
 .budget:hover{
 	color:white;
 	background-color:#0065FC;
@@ -262,7 +263,10 @@ i.fa-info-circle{
 i.fa-info-circle, .room_available p{
 	display: inline-block;
 }
+/* ****FIN FILTRES + LIGNE DISPONIBILITE ****** */
 
+/* ******DEBUT SECTION "HEBERGEMENT A MARSEILLE + ASIDE******* */
+/* ****debut 1ere partie section hebergement à Marseille****** */
 .hebergement{
 	display: grid;
 	row-gap: 15px;
@@ -299,6 +303,9 @@ i.fa-info-circle, .room_available p{
 	justify-content: center;
 	align-items: baseline;
 }
+/* ****fin 1ere partie hébergement****** */
+
+/* ****debut aside****** */
 aside{
 	margin-right: 50px;
 }
@@ -359,7 +366,7 @@ aside h2{
 	grid-row: 1 / 2;
 	font-family: 'Raleway-Black', sans-serif;
 	font-size:larger;
-	display:flex;
+	display:inline-flex;
 	justify-content: space-between;
 }
 
@@ -378,7 +385,7 @@ aside .stars_icon{
 	padding: 0;
 }
 
-.populaire h2, .populaire .graph_icon{
+.populaire h2, .populaire i.fa-chart-line{
 	display:inline-flex;
 	justify-content: space-between;
 }
@@ -391,6 +398,7 @@ aside .graph_icon{
 }
 .fa-chart-line{
 	font-size: 1.2em;
+	display: flex;
 }
 .description_pop{
 	border: white 3px solid;
@@ -430,7 +438,8 @@ aside p{
 	margin: 0;
 	padding: 0;
 }
-
+/* ****fin aside****** */
+/* ****suite section hebergement****** */
 .hebergement_marseille_container{
 	background-color: #F2F2F2;
 	padding-left: 20px;
@@ -448,14 +457,12 @@ aside p{
 .hebergement{
 	margin-top: 20px;
 }
-
 .hebergement_marseille_container h2{
 	font-family: 'Raleway-Black', sans-serif;
 	font-size:larger;
 	grid-area: h2;
 	padding-left: 15px;
 }
-
 .next_section{
 	grid-area: following-sections;
 }
@@ -477,7 +484,6 @@ aside p{
 #la_mer{
 	grid-area: mer;
 }
-
 .hebergement_marseille_container img{
 width: 230px;
 height: 110px;
@@ -543,21 +549,25 @@ section a{
 .stars_icon{
 	font-size: 0.7em;
 }
+/* ****fin section hebergement à Marseille****** */
 
+/* ****debut section activites à Marseille****** */
 .activite_marseille_container{
-	align-items:flex-end;
 	padding-top: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
-	gap: 10px;
+	gap: 40px;
 	display: grid;
+	justify-content: center;
+	align-items: flex-start;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 50px 1fr 1fr;
+	grid-template-rows: 50px 170px 170px;
 	grid-template-areas: 
 	"h2 h2 h2 h2"
 	"vieux_port fort_pomegues Parc_national Notre_dame"
 	"vieux_port frioul Parc_national longchamp";
 }
+
 .activite_marseille_container h2{
 	grid-area: h2;
 	font-family: 'Raleway-Black',sans-serif;
@@ -569,12 +579,13 @@ section a{
 	grid-column: 1 / 2;
 	grid-row: 2 / 4;
 	display: block;
+	justify-content: flex-start;
 	margin:auto;
 	padding-bottom: auto;
-	background-color: #F2F2F2;
 	border-radius: 15px 15px 15px 15px;
 	object-fit: cover;
 	object-position: center;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 .gallery1:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
@@ -597,10 +608,10 @@ section a{
 	display: block;
 	margin:auto;
 	padding: auto;
-	background-color: #F2F2F2;
 	border-radius: 15px 15px 15px 15px;
 	object-fit: cover;
 	object-position: center;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 .gallery2:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
@@ -611,18 +622,22 @@ section a{
 }
 .gallery2 img{
 	width: 270px;
-	height: 170px;
+	height: 140px;
+	margin: 0;
+	padding: 0;
 }
 .gallery3{
 	grid-area: frioul;
 	grid-column: 2 / 3;
 	grid-row: 3 / 4;
 	display: block;
+	align-items: flex-start;
 	margin: auto;
 	padding-bottom: auto;
-	background-color: #F2F2F2;
 	object-fit: cover;
 	object-position: center;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
 	
 }
 .gallery3:hover{
@@ -634,7 +649,7 @@ section a{
 }
 .gallery3 img{
 	width: 270px;
-	height: 130px;
+	height: 110px;
 	margin: 0;
 	padding: 0;
 }
@@ -644,15 +659,19 @@ section a{
 	grid-row: 2 / span 4;
 	display: block;
 	margin: auto;
+	padding-left: auto;
 	padding-bottom: auto;
 	object-fit: cover;
 	object-position: center;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	border-radius: 15px 15px 15px 15px;
 }
 .gallery4:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
-	margin:auto;
-	padding-bottom:auto;
+	margin: auto;
+	padding-top: auto;
+	padding-bottom: auto;
 	border-radius: 15px 15px 15px 15px;
 }
 .gallery4 img{
@@ -682,7 +701,7 @@ section a{
 }
 .gallery5 img{
 	width: 270px;
-	height: 150px;
+	height: 125px;
 	margin: 0;
 	padding: 0;
 }
@@ -707,7 +726,7 @@ section a{
 }
 .gallery6 img{
 	width: 270px;
-	height: 130px;
+	height: 125px;
 	margin: 0;
 	padding: 0;
 }
@@ -716,6 +735,9 @@ section a{
 	object-fit: cover;
 	object-position: center;
 	display: flex;
+	justify-content:flex-start;
+	align-items:flex-start;
+
 }
 .description_activite{
 	font-family: 'Raleway-Black',sans-serif;
@@ -728,6 +750,9 @@ section a{
 	background-color: white;
 	border-radius: 0 0 15px 15px;
 	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
 }
 #activite_marseille a{
 	color: black;
@@ -735,3 +760,5 @@ section a{
 #activite_marseille a:hover{
 	color:#0065FC;
 }
+
+/* ****fin section activites à marseille****** */
