@@ -67,11 +67,13 @@ font-family: 'Raleway Light',sans-serif;
 .hebergementnav a:hover{
 	color: #0065FC;
 	border-top: 2px solid;
+	padding-top: 78px;
 	font-weight: bold;
 }
 .activites a:hover{
 	color: #0065FC;
 	border-top: 2px solid;
+	padding-top: 78px;
 	font-weight: bold;
 }
 /* ****FIN HEADER****** */
@@ -762,3 +764,51 @@ section a{
 }
 
 /* ****fin section activites à marseille****** */
+
+/* *****************début footer**************** */
+/*footer{
+	display: grid;
+	grid-template-columns:
+	grid-template-rows:
+	grid-template-areas: 
+	"p h a"
+	"";*/
+footer{
+	width: auto;
+	margin-top: 20px;
+	height: 150px;
+	background-color: #F2F2F2;
+}
+.footer-nav-assistance{
+	margin-right: 250px;
+}
+footer a{
+	text-decoration: none;
+	color:black;
+}
+footer a:hover{
+	color: #0065FC;
+}
+footer a{
+	font-size: 0.8em;
+	font-family: 'Raleway light',sans-serif;
+}
+footer h1{
+	font-size: 0.9em;
+	font-family: 'Raleway semibold',sans-serif;
+}
+.footer-nav-contenair{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-nav-contenair li{
+	display:flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+
+
+
+
+/* *****************fin footer****************** */
