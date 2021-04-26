@@ -637,11 +637,15 @@ section a{
 
 /* ****debut section activites à Marseille****** */
 .activite_marseille_container{
+	padding-top: 20px;
+	padding-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 	display: grid;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: flex-end;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 50px 1fr 1fr;
+	grid-template-rows: 40px 200px 1fr;
 	grid-template-areas: 
 	"h2 h2 h2 h2"
 	"vieux_port fort_pomegues Parc_national Notre_dame"
@@ -650,10 +654,12 @@ section a{
 
 .activite_marseille_container h2{
 	grid-area: h2;
-	font-family: 'Raleway-Black',sans-serif;
+	font-family: 'Raleway Medium';
 	font-size:larger;
-	padding-left: 15px;
-	padding-bottom: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-bottom: 20px;
 	margin-bottom: 0;
 }
 .gallery1{
@@ -661,20 +667,18 @@ section a{
 	grid-column: 1 / 2;
 	grid-row: 2 / 4;
 	display: block;
-	justify-content: flex-start;
-	margin:auto;
-	padding-bottom: auto;
+	margin: 0;
+	padding: 0;
 	border-radius: 15px 15px 15px 15px;
+	box-sizing: border-box;
 	object-fit: cover;
 	object-position: center;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
+	width: 270px;
 }
 .gallery1:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
-	box-sizing: border-box;
-	margin: auto;
-	padding-bottom: auto;
 	border-radius: 15px 15px 15px 15px;
 }
 .gallery1 img{
@@ -688,23 +692,25 @@ section a{
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 	display: block;
-	margin:auto;
-	padding: auto;
+	margin:0;
+	padding: 0;
 	border-radius: 15px 15px 15px 15px;
 	object-fit: cover;
-	object-position: center;
+	object-position:center;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
+	box-sizing: border-box;
+	width: 270px;
 }
 .gallery2:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
-	margin:auto;
-	padding: auto;
+	margin: 0;
+	padding: 0;
 	border-radius: 15px 15px 15px 15px;
 }
 .gallery2 img{
 	width: 270px;
-	height: 180px;
+	height: 140px;
 	margin: 0;
 	padding: 0;
 }
@@ -713,25 +719,25 @@ section a{
 	grid-column: 2 / 3;
 	grid-row: 3 / 4;
 	display: block;
-	align-items: flex-start;
-	margin: auto;
-	padding-bottom: auto;
+	margin-top: 0;
+	padding-top: 0;
 	object-fit: cover;
 	object-position: center;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
+	width: 270px;
 	
 }
 .gallery3:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
-	margin: auto;
-	padding-bottom: auto;
+	margin: 0;
+	padding: 0;
 	border-radius: 15px 15px 15px 15px;
 }
 .gallery3 img{
 	width: 270px;
-	height: 110px;
+	height: 100px;
 	margin: 0;
 	padding: 0;
 }
@@ -740,20 +746,20 @@ section a{
 	grid-column: 3 / 4;
 	grid-row: 2 / span 4;
 	display: block;
-	margin: auto;
-	padding-left: auto;
-	padding-bottom: auto;
+	justify-content: center;
+	margin: 0;
+	padding-top: 0;
 	object-fit: cover;
 	object-position: center;
-	box-shadow: 0 0 6px 3px #b1b1b14b;
 	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	width: 270px;
 }
 .gallery4:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
-	margin: auto;
-	padding-top: auto;
-	padding-bottom: auto;
+	margin: 0;
+	padding: 0;
 	border-radius: 15px 15px 15px 15px;
 }
 .gallery4 img{
@@ -767,18 +773,20 @@ section a{
 	grid-column: 4 / 5;
 	grid-row: 2 / 3;
 	display: block;
-	box-shadow: 0 0 6px 3px #b1b1b14b;
-	margin: auto;
-	padding-bottom: auto;
+	padding: 0;
+	margin-bottom: 0;
+	padding-top: 0;
 	object-fit: cover;
 	object-position: center;
 	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	width: 270px;
 }
 .gallery5:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
-	margin:auto;
-	padding-bottom:auto;
+	margin: 0;
+	padding: 0;
 	border-radius: 15px 15px 15px 15px;
 }
 .gallery5 img{
@@ -792,41 +800,44 @@ section a{
 	grid-column: 4 / 5;
 	grid-row: 3 / 4;
 	display: block;
-	box-shadow: 0 0 6px 3px #b1b1b14b;
-	margin: auto;
-	padding-bottom: auto;
+	margin: 0;
+	padding: 0;
 	object-fit: cover;
 	object-position: center;
 	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	width: 270px;
 }
 .gallery6:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
-	margin:auto;
-	padding-bottom:auto;
+	margin: 0;
+	padding: 0;
 	border-radius: 15px 15px 15px 15px;
 }
 .gallery6 img{
 	width: 270px;
-	height: 150px;
+	height: 130px;
 	margin: 0;
 	padding: 0;
 }
 #activite_marseille img{
 	border-radius: 15px 15px 0 0;
 	object-fit: cover;
-	object-position: center;
+	border: none;
+	margin: 0;
+	padding: 0;
 }
 .description_activite{
-	font-family: 'Raleway-Black',sans-serif;
-	height: 40px;
+	font-family: 'Raleway Black';
+	height: 45px;
 	font-size: 0.7em;
 	padding-left: 15px;
 	align-items: center;
-	box-sizing: border-box;
 	border: 1px #F2F2F2 solid;
-	background-color: white;
+	border: none;
 	border-radius: 0 0 15px 15px;
+	width: 270px;
 }
 #activite_marseille a{
 	color: black;
@@ -875,9 +886,5 @@ footer h1{
 	justify-content: flex-start;
 	flex-direction: column;
 }
-
-
-
-
 
 /* *****************fin footer****************** */
