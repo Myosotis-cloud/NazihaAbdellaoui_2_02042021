@@ -908,18 +908,19 @@ footer h1{
 
 /*RESPONSIVE APPAREILS MOBILES*/
 @media screen and (max-width: 540px){
+	*{box-sizing: border-box;}
 	body
 	{
-	width:auto;
-	margin-right: 20px;
-	margin-left: 30px;
-	margin-top: 10px;
+	padding: 16px;
+	margin: 0;
 	}
-	header
-	{
-	grid-template-columns: 480px;
-	grid-template-rows:70px 80px 70px 60px;
+	
+	header{
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 84px 0px 34px;
 	}
+
 	header img{
 	width: 130px;
 	height: 60px;
@@ -939,7 +940,7 @@ footer h1{
 	}
 	#sign-in{
 		position: absolute;
-		top: 2em; 
+		top: 2.2em; 
 		right: 2em;
 		font-size: 1em;
 	}
@@ -947,48 +948,46 @@ footer h1{
 		display:inline-flex;
 		justify-content: center;
 		align-items: center;
-		width:100%;
-		grid-column: 1 / 2;
+		width: 100%;
+		/* grid-column: 1 / 2;
 		grid-row: 2 / 3;
 		margin-left: 0;
-		margin-right: 2px;
+		margin-right: 2px; */
 		}
 	.activites{
-		width: 100%;
+		width: 50%;
+		text-align: center;
 		display: inline-block;
 		align-items: center;
 		border-bottom: #F2F2F2 solid 3px;
 		padding-bottom: 10px;
-		padding-left: 25%;
-		padding-right: 25%;
 		margin-left: 0;
 		margin-right: 2px;
 	}
 	.hebergementnav{
-		width: 100%;
+		width: 50%;
+		text-align: center;
 		display: inline-block;
 		align-items: center;
 		border-bottom: #0065FC solid 3px;
 		padding-bottom: 10px;
-		padding-left: 25%;
-		padding-right: 25%;
 	}
 
 	header h1{
 	text-align: start;
 	padding-top: 0;
-	grid-column: 1 / 2;
 	grid-row: 3 / 4;
 	flex-wrap: wrap;
-	font-size: 1.5em;
+	font-size: 1em;
 	}
 	header h2{
-	grid-column: 1 / 2;
-	grid-row: 4 / 5;
-	font-size: 1em;
-	flex-wrap: wrap;
-	text-align: start;
-	align-items: flex-end;
+		grid-column: -4 / 2;
+		grid-row: 5 / 5;
+		font-size: 1em;
+		flex-wrap: wrap;
+		text-align: start;
+		align-items: flex-end;
+		font-weight: 300;
 	}
 	
 	.hebergementnav a:hover{
@@ -1040,7 +1039,6 @@ footer h1{
 	grid-row: 1 / 2;
 	display: inline-flex;
 	border: 1px solid #F2F2F2;
-	height: 40px;
 	border-radius: 10px 10px 10px 10px;
 	align-items:center;
 	text-align: center;
@@ -1049,7 +1047,6 @@ footer h1{
 	input 
 	{
 		height: 48px;
-		width: 370px
 	}
 	input:focus{
 		background-color:white;
@@ -1142,6 +1139,56 @@ footer h1{
 		font-family: 'Raleway Thin',sans-serif;
 		font-weight: bold;
 		font-size: 1em;
+	}
+	i.fa-info-circle, .room_available p{
+		display: inline-block;
+	}
+
+	.hebergement{
+		row-gap: 20px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 12fr;
+		grid-template-areas:
+		"P"
+		"P"
+		"P"
+		"P"
+		"h"
+		"h"
+		"h"
+		"h"
+		"h"
+		"h"
+		"h"
+		"h";
+	}
+	.populaire{
+		grid-area: P;
+		background-color: #F2F2F2;
+		margin: 0;
+		padding: 0;
+		width: 450px;
+	}
+	.hebergement_marseille_container{
+		grid-area: h;
+		background-color: #F2F2F2;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#populaire_carte_contenair1{
+		grid-area: P;
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		margin: 0;
+		padding: 0;
+	
+	}
+	
+	#populaire_carte_contenair2 a{
+		display: inline-flex;
+	}
+	#populaire_carte_contenair3 a{
+		display: inline-flex;
 	}
 	
 }
