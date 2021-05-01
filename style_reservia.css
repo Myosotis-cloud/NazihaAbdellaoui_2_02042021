@@ -674,21 +674,26 @@ section a{
 /* ****debut section activites à Marseille****** */
 .activite_marseille_container{
 	width: 100%;
+	margin: 0;
+	padding: 0;
+	gap:1%;
 	display: grid;
 	padding-bottom: 10%;
-	gap: 10%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	grid-template-columns: repeat(4, 12%);
-	grid-template-rows: 10% 60%  10%;
+	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-areas: 
 	"h2 h2 h2 h2"
 	"vieux_port fort_pomegues Parc_national Notre_dame"
 	"vieux_port frioul Parc_national longchamp";
 }
 
+
 .activite_marseille_container h2{
 	grid-area: h2;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 	font-family: 'Raleway Medium';
 	font-size:larger;
 	display: flex;
@@ -702,7 +707,8 @@ section a{
 	grid-area: vieux_port;
 	grid-column: 1 / 2;
 	grid-row: 2 / 4;
-	display: block;
+	display: flex;
+	justify-content: flex-end;
 	margin: 0;
 	padding: 0;
 	border-radius: 15px 15px 15px 15px;
@@ -728,16 +734,16 @@ section a{
 	grid-area: fort_pomegues;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
-	display: block;
+	display: flex;
+	justify-content: flex-end;
 	margin:0;
 	padding: 0;
 	border-radius: 15px 15px 15px 15px;
 	object-fit: cover;
-	object-position:center;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	box-sizing: border-box;
 	width: 250px;
-	height: 200px;
+	height: 150px;
 }
 .gallery2:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
@@ -748,7 +754,7 @@ section a{
 }
 .gallery2 img{
 	width: 250px;
-	height: 200px;
+	height: 150px;
 	margin: 0;
 	padding: 0;
 }
@@ -756,15 +762,15 @@ section a{
 	grid-area: frioul;
 	grid-column: 2 / 3;
 	grid-row: 3 / 4;
-	display: block;
+	display: flex;
+	justify-content: flex-end;
 	margin-top: 0;
 	padding-top: 0;
 	object-fit: cover;
-	object-position: center;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	width: 250px;
-	height: 200px;
+	height: 120px;
 	
 }
 .gallery3:hover{
@@ -776,7 +782,7 @@ section a{
 }
 .gallery3 img{
 	width: 250px;
-	height: 200px;
+	height: 120px;
 	margin: 0;
 	padding: 0;
 }
@@ -784,12 +790,11 @@ section a{
 	grid-area: Parc_national;
 	grid-column: 3 / 4;
 	grid-row: 2 / span 4;
-	display: block;
-	justify-content: center;
+	display: flex;
+	justify-content: flex-end;
 	margin: 0;
 	padding-top: 0;
 	object-fit: cover;
-	object-position: center;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	width: 250px;
@@ -812,16 +817,16 @@ section a{
 	grid-area: Notre_dame;
 	grid-column: 4 / 5;
 	grid-row: 2 / 3;
-	display: block;
+	display: flex;
+	justify-content: flex-start;
 	padding: 0;
 	margin-bottom: 0;
 	padding-top: 0;
 	object-fit: cover;
-	object-position: center;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	width: 250px;
-	height: 200px;
+	height: 150px;
 }
 .gallery5:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
@@ -832,7 +837,7 @@ section a{
 }
 .gallery5 img{
 	width: 250px;
-	height: 200px;
+	height: 150px;
 	margin: 0;
 	padding: 0;
 }
@@ -840,7 +845,8 @@ section a{
 	grid-area: longchamp;
 	grid-column: 4 / 5;
 	grid-row: 3 / 4;
-	display: block;
+	display: flex;
+	justify-content: flex-end;
 	margin: 0;
 	padding: 0;
 	object-fit: cover;
@@ -848,7 +854,7 @@ section a{
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	width: 250px;
-	height: 200px;
+	height: 150px;
 }
 .gallery6:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
@@ -859,7 +865,7 @@ section a{
 }
 .gallery6 img{
 	width: 250px;
-	height: 200px;
+	height: 150px;
 	margin: 0;
 	padding: 0;
 }
