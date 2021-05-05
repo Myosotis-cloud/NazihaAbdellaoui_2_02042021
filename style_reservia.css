@@ -127,6 +127,19 @@ width: 100px;
 	border-radius: 10px 10px 10px 10px;
 	}
 
+
+	.nav-mobile-activite a{
+		color: black;
+		background-color:white;
+		transition: all 1s ease-out;
+	  }
+	  
+	  .nav-mobile-activite a:hover,
+	  .nav-mobile-activite a:focus {
+		color: #333;
+		background-color: #fff;
+	  }
+
 .budget:hover{
 	color:white;
 	background-color:#0065FC;
@@ -678,37 +691,105 @@ aside p{
 /* ****fin aside****** */
 
 /* ****debut section activites à Marseille****** */
-
 .activites-container-main{
-	width: 85%;
-	padding-bottom: 5%;
-	gap: 2%;
-	display: grid;
-	justify-content:center;
-	align-items: stretch;
-	grid-template-columns: 24% 24% 24% 24%;
-	grid-template-rows: 50px 200px 200px;
-	grid-template-areas: 
-	"h2 h2 h2 h2"
-	"port pomegues calanques dame"
-	"port frioul calanques longchamp";
+	display: block;
 }
 
-.activites-container-main img{
+li img{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px 15px 0px 0px;
+	display: flex;
+}
+li a:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+    transition: box-shadow 0.2s;
+}
+
+ul{
+	width: 90%;
+	padding-bottom: 10%;
+	list-style-type: none;
+	padding-left: 7%;
+	padding-right: 7%;
+	justify-content: center;
+	grid-gap: 3%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 50px 150px 150px;
+	grid-template-areas: 
+	"z z z z"
+	"a b d e"
+	"a c d f";
+}
+ul h2:nth-child(1){
+	grid-area: z;
+	display: flex;
+	justify-content: flex-start;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 800;
+	font-size: larger;
+}
+li h3{
+	font-family: 'Raleway',sans-serif;
+	font-weight: 800;
+	font-size: 0.9em;
+	padding-left: 15px;
+	border: 1px solid #F2F2F2;
+	border-top: none;
+	display: flex;
+	height: 43px;
+	width: 250px;
+}
+li h3, li img{
+	display: block;
+	text-align: flex-start;
+	align-items: center;
+}
+li:nth-child(2){
+	grid-area: a;
+	border: #F2F2F2 1px solid;
+	display: block;
+}
+
+li:nth-child(3){
+	grid-area: b;
+	display: block;
+	
+}
+li:nth-child(4){
+	grid-area: c;
+}
+li:nth-child(5){
+	grid-area: d;
+}
+li:nth-child(6){
+	grid-area:e;
+}
+li:nth-child(7){
+	grid-area: f;	
+}
+
+
+/*.activites-container-main img{
 	object-fit: cover;
 	object-position: center;
 }
 
+
 .activites-container-main h3{
 	font-family: 'Raleway';
 	font-weight: 800;
-	height:45px;
+	height:43px;
 	width: 250px;
 	font-size: 0.8em;
 	padding-left: 10px;
 	border: 1px #F2F2F2 solid;
 	border-radius: 0 0 15px 15px;
 }
+
 .titre-activite{
 	grid-area: h2;
 	grid-column: 1 / span 5;
@@ -724,98 +805,99 @@ aside p{
 	padding: 0;
 }
 
-.vieux_port{
+.item-1 a{
 	grid-area: port;
 	grid-column: 1 / 2;
-	grid-row: 2 / span 4;
-	border-radius: 15px 15px 15px 15px;
-	box-shadow: 0 0 6px 3px #b1b1b14b;
-	display: block;
+	grid-row: 2 / span 4;	
 }
 .vieux_port img{
 	width: 250px;
 	height: 300px;
+	border-radius: 15px 15px 0px 0px;
+	box-shadow: 0 2px 5px #b1b1b14b;
 }
 
 .description_activite_port{
 	grid-area: port;
+	align-items: center;
 }
-.fort{
+.item-2 a{
 	grid-area: pomegues;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
-	border-radius: 15px;
-	object-fit: cover;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
-	width: 250px;
-	height: 150px;
+	
 }
 .fort img{
 	width: 250px;
-	height: 190px;
+	height: 150px;
+	border-radius: 15px 15px 0 0;
 }
 .description_activite_fort{
 	grid-area: fort;
+	align-items: center;
 }
 
-.frioul{
+.item-3 a{
 	grid-area: frioul;
 	grid-column: 2 / 3;
 	grid-row: 3 / 4;
-	width: 250px;
-	height: 120px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
 }
+	
 .frioul img{
 	width: 250px;
 	height: 120px;
+	border-radius: 15px 15px 0px 0px;
 }
 .description_activite_frioul{
 	grid-area: frioul;
+	align-items: center;
 }
-.calanques{
+.item-4 a{
 	grid-area: calanques;
 	grid-column: 3 / 4;
 	grid-row: 2 / span 4;
-	width: 250px;
-	height: 300px;
+	
+	
 }
 .calanques img{
+	border-radius: 15px 15px 0px 0px;
 	width: 250px;
 	height: 300px;
 }
 .description_activite_calanques{
 	grid-area: calanques;
+	align-items: center;
 }
 
-.dame{
+.item-5 a{
 	grid-area: dame;
 	grid-column: 4 / 5;
 	grid-row: 2 / 3;
-	width: 250px;
-	height: 145px;
 }
 .dame img{
 	width: 250px;
-	height: 145px;
+	height: 300px;
+	border-radius: 15px 15px 0px 0px;
 }
 .description_activite_dame{
 	grid-area: dame;
+	align-items: center;
 }
-.longchamp{
+.item-6 a{
 	grid-area: longchamp;
 	grid-column: 4 / 5;
 	grid-row: 3 / 4;
-	width: 250px;
-	height: 150px;
-
 }
 .longchamp img{
 	width: 250px;
 	height: 150px;
+	border-radius: 15px 15px 0px 0px;
 }
 .description_activite_longchamp{
-	width: 250px;
-	height: 150px;
+	grid-area: longchamp;
+	align-items: center;
 }
 
 /*.vieux_port:hover{
@@ -839,6 +921,7 @@ aside p{
 
 footer{
 	width: 100%;
+	padding-top: 3%;
 	margin: 0;
 	padding: 0;
     background-color: #F2F2F2;
@@ -870,6 +953,33 @@ footer h1{
 }
 
 /* *****************fin footer****************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*RESPONSIVE APPAREILS MOBILES*/
 @media screen and (max-width: 425px){
