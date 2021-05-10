@@ -1,6 +1,7 @@
 body{
 	margin: 0 0;
 	width: 100%;
+	margin-top: 55px;
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
@@ -13,7 +14,6 @@ body *{
 	margin: auto;
 	padding-left: 5%;
 	padding-right: 5%;
-	padding-top: 5%;
 }
 
 /* ******DEBUT HEADER********* */
@@ -22,7 +22,7 @@ header
 	display: grid;
 	width: 100%;
 	font-family: 'Raleway';
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 40%;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 	"logo group-nav-container"
@@ -36,11 +36,12 @@ header
 }
 
 .nav2{
+	width: 75%;
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-	grid-area: group-nav-container;
-	padding-left: 20px;
 	padding-right: 20px;
+	padding-left: auto;
+	grid-area: group-nav-container;
 	display: inline-flex;
 	justify-content: space-around;
 }
@@ -48,6 +49,8 @@ header
 	font-family: 'Raleway',sans-serif;
 	font-weight: 600;
 	color: #0065FC;
+	height: 30px;
+	line-height: 30px;
 	transition: all 0.5s ease-out;
 }
 .nav2 .registration a:hover,
@@ -767,8 +770,9 @@ aside p{
 .activites-container-main{
 	display: block;
 	justify-content:flex-start;
-	padding-right: 35px;
 	padding-left: 0;
+	margin-left: 0;
+	margin-right: auto;
 }
 
 li img{
@@ -811,6 +815,8 @@ li a:focus{
 
 .activites-container-main ul{
 	width: 100%;
+	margin-left: 0;
+	margin-right: auto;
 	list-style-type: none;
 	justify-content: flex-start;
 	align-items: flex-end;
@@ -949,12 +955,12 @@ footer h1{
 	}
 
 	header
-{
+	{
 	width: 100%;
 	font-family: 'Raleway';
 	grid-template-columns: 57% 43%;
 	grid-template-rows: 1fr 1fr;
-}
+	}
 
 	.nav2{
 		padding-left: 5px;
@@ -1102,7 +1108,7 @@ i.fa-map-marker-alt{
 	justify-content: flex-start;
 	align-items: center;
 	padding-right: 3%;
-	margin-right: 2%;
+	margin-right: 1%;
 	padding-bottom: 5%;
 	padding-top: 2%;
 }
@@ -1149,7 +1155,19 @@ i.fa-map-marker-alt{
 	.hebergement_marseille_container h2{
 		font-size: 1.2em;
 	}
-	aside h2{
+	.populaire{
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 3%;
+		margin-left: 1%;
+		border-radius: 15px;
+		padding-left: 2%;
+		padding-right: 2%;
+		padding-top: 2%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+		aside h2{
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		display: inline-block;
@@ -1175,7 +1193,7 @@ i.fa-map-marker-alt{
 		height: 100px;
 		object-fit: cover;
 		border-radius: 15px 0px 0px 15px;
-		border: solid white 4px;
+		border: solid white 3px;
 		margin: 0;
 		padding-bottom: 0;
 	}
@@ -1186,14 +1204,18 @@ i.fa-map-marker-alt{
 	aside p{
 		font-size: 0.7em;
 	}
+
 	#activite_marseille{
 		max-width: 1024px;
-		padding-top: 2%;
+		padding-top: 1%;
+		padding-bottom: 2%;
 	}
-	.activites-container-main{
-		padding-right: auto;
-		padding-left: 0;
-	}
+	/*.activites-container-main{
+		padding-left: auto;
+	}*/
+	.activites-container-main ul{
+		margin: 0 auto;
+		}
 	
 	#vieux_port{
 		height: 250px;
@@ -1217,8 +1239,9 @@ i.fa-map-marker-alt{
 	
 	.activites-container-main ul{
 		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
 		column-gap: 2%;
-		padding-right: 20px;
 		row-gap: 3%;
 		grid-template-columns: repeat(4, 220px);
 		grid-template-rows: 60px 150px 150px;
@@ -1226,9 +1249,7 @@ i.fa-map-marker-alt{
 	ul h2:nth-child(1){
 		font-size: 1.2em;
 	}
-	li h3{
-	
-		
+	li h3{	
 		font-size: 0.8em;
 		padding-left: 15px;
 		height: 23px;
@@ -1238,7 +1259,6 @@ i.fa-map-marker-alt{
 		box-shadow: 0 0 6px 3px darkgrey;
 		transition: all 0.5s ease-out;
 	}
-	
 	
 	#activite_marseille a{
 		color: black;
@@ -1257,8 +1277,378 @@ i.fa-map-marker-alt{
 		font-weight: 200;
 	}
 	footer h1{
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
+}
+/* ******RESPONSIVE TABLETTES MAX WIDTH 768px******* */
+
+@media screen and (max-width:768px) {
+	body{
+		margin: 0 0;
+		max-width: 768px;
+		margin-top: 17px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	body *{
+		box-sizing: border-box;
+	}
+	#wrapper
+	{
+		max-width: 768px;
+		margin: auto;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	header
+{
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 80px 100px;
+	padding-bottom: 2%;
+}
+
+	.nav2{
+		width: 100%;
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		font-size: 1em;
+		display: inline-flex;
+		justify-content: flex-start;
+	}
+	.nav1 img{
+		width: 100%;
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		display: flex;
+		justify-content: center;
+		/*align-items: flex-start;*/
+	}
+
+	#logo-reservia{
+		width: 100px;
+		display: flex;
+		justify-content: flex-end;
+		}
+	.head-title{
+			width: 100%;
+			grid-column: 1 / span 3;
+			grid-row: 2 / 3;
+		}
+	header .head-title h1{
+			grid-column: 1 / span 3;
+			grid-row: 2 / 3;
+			flex-wrap: wrap;
+			font-size: 1.6em;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	header .head-title h2{
+			grid-column: 1 / span 3;
+			grid-row: 2 / 3;
+			flex-wrap: wrap;
+			font-size: 1.2em;
+			padding-top: 0;
+		}
+
+	.search_zone_contenair{
+		width: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	input 
+	{
+	width: 100%;
+	text-align: center;
+	transition: all 0.5s ease-out;
+	font-size: 1em;
+	height: 45px;
+	width: 350px;
+	}
+
+	i.fa-map-marker-alt{
+	font-size: 0.9em;
+	background-color: #F2F2F2;
+	border: #F2F2F2 solid;
+	border-radius: 8px 0 0 8px;
+	width: 45px;
+	height: 45px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;		
+	}
+	.submit{
+		display: none;
+	}
+	.button2{
+		display: inline-block;
+		align-items: center;
+		text-align: center;
+		border-radius: 10px 10px 10px 10px;
+		font-weight: bold;
+		font-size: 1em;
+		height: 50px;
+		width: 50px;
+		background-color: #0065FC;
+		color: white;
+		border:none;
+	}
+	.button2:hover{
+		box-shadow: 0 0 6px 3px darkgrey;
+		font-weight: bold;
+		font-size: 0.8em;
+		transition: none;
+		cursor: pointer;
+	}	
+
+
+.filtres{
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 0.8em;
+	display:inline-flex;
+	justify-content:space-around;
+	align-items: center;
+	padding-top: 2%;
+}
+.budget{
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	border:solid #F2F2F2 2px;
+	width: 140px;
+	border-radius: 30px 30px 30px 30px;
+	color:black;
+	background-color: white;
+	transition: all 1s ease-out;
+}
+.composition{
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	border:solid #F2F2F2 2px;
+	width: 110px;
+	border-radius: 30px 30px 30px 30px;
+	color:black;
+	background-color: white;
+	transition: all 1s ease-out;
+
+}
+.ambiance{
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	border:solid #F2F2F2 2px;
+	width: 140px;
+	border-radius: 30px 30px 30px 30px;
+	color:black;
+	background-color: white;
+	transition: all 1s ease-out;
+}
+.animaux{
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	width: 180px;
+	border-radius: 30px 30px 30px 30px;
+	color:black;
+	background-color: white;
+	border:#F2F2F2 solid 2px;
+	transition: all 1s ease-out;
+}
+.hebergement{
+	display: inline-flex;
+	justify-content: flex-start;
+	padding-top: 3%;
+	width: 100%;
+}
+.hebergement_marseille_container{
+	background-color: #F2F2F2;
+	row-gap: 2%;
+	column-gap: 1%;
+	padding-left: 1%;
+	justify-content: flex-start;
+	align-items: center;
+	padding-right: 3%;
+	margin-right: 1%;
+	padding-bottom: 5%;
+	padding-top: 2%;
+}
+.hebergement_marseille_container img{
+	width: 200px;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+	border: 2px white solid;
+	border-bottom: white 5px solid;
+	border-radius: 15px 15px 0px 0px;
+	}
+	
+	strong{
+		font-size: 1em;
+	}
+	span{
+		font-size: 1em;
+	}
+	.hotel_description h3{
+		font-size: 0.8em;
+	}
+	.hotel_description p{
+		font-size: 0.7em;
+	}
+	.hotel_description{
+		border: white solid;
+		border-radius: 0 0 15px 15px;
+		margin: 0;
+		padding-left: 12px;
+		padding-bottom: 10px;
+		width: 200px;
+	}
+	.hotel_description .stars_icon{
+		padding-top: 6px;
+	}
+	.stars_icon{
+		font-size: 0.6em;
+		display: flex;
+	}
+	.next_section a{
+		font-size: 0.7em;
+	}
+	.hebergement_marseille_container h2{
+		font-size: 1.2em;
+	}
+	.populaire{
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 3%;
+		margin-left: 1%;
+		border-radius: 15px;
+		padding-left: 2%;
+		padding-right: 2%;
+		padding-top: 2%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+		aside h2{
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		display: inline-block;
+		justify-content: space-between;
+		align-items: flex-end;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
+		font-size: 1.2em;
+	}
+	i.fa-chart-line{
+		font-size: 1.2em;
+	}
+	.description_pop{
+		width: 140px;
+		height: 100px;
+	}
+	a:-webkit-any-link {
+		color: -webkit-link;
+		cursor: pointer;
+	}
+	.photo_populaire img{
+		width: 115px;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 15px 0px 0px 15px;
+		border: solid white 3px;
+		margin: 0;
+		padding-bottom: 0;
+	}
+	
+	aside h3{
+		font-size: 0.8em;
+	}
+	aside p{
+		font-size: 0.7em;
+	}
+
+	#activite_marseille{
+		max-width: 768px;
+		padding-top: 1%;
+		padding-bottom: 2%;
+	}
+	/*.activites-container-main{
+		padding-left: auto;
+	}*/
+	.activites-container-main ul{
+		margin: 0 auto;
+		}
+	
+	#vieux_port{
+		height: 250px;
+	}
+	#pomegues{
+		height: 90px;
+	}
+	#Frioul{
+		height: 80px;
+	}
+	#parc_calanques{
+		height: 250px;
+	}
+	#Notre-Dame{
+		height: 90px;
+	}
+	#Longchamp{
+		height: 100px;
+	}
+	
+	.activites-container-main ul{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		column-gap: 2%;
+		row-gap: 3%;
+		grid-template-columns: repeat(4, 220px);
+		grid-template-rows: 60px 150px 150px;
+	}
+	ul h2:nth-child(1){
+		font-size: 1.2em;
+	}
+	li h3{	
+		font-size: 0.8em;
+		padding-left: 15px;
+		height: 23px;
+	}
+	ul li a{
+		width: 100%;
+		box-shadow: 0 0 6px 3px darkgrey;
+		transition: all 0.5s ease-out;
+	}
+	
+	#activite_marseille a{
+		color: black;
+	}
+	#activite_marseille a:hover{
+		color:#0065FC;
+	}
+
+	footer{
+		width: 100%;
+	}
+	
+	footer a{
+		font-size: 0.8em;
+		font-family: 'Raleway',sans-serif;
+		font-weight: 200;
+	}
+	footer h1{
+		font-size: 0.8em;
+	}
+
 
 }
 
