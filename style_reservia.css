@@ -1342,7 +1342,7 @@ i.fa-map-marker-alt{
 			grid-column: 1 / span 3;
 			grid-row: 2 / 3;
 			flex-wrap: wrap;
-			font-size: 1.6em;
+			font-size: 1.5em;
 			padding-bottom: 0;
 			margin-bottom: 0;
 		}
@@ -1350,7 +1350,7 @@ i.fa-map-marker-alt{
 			grid-column: 1 / span 3;
 			grid-row: 2 / 3;
 			flex-wrap: wrap;
-			font-size: 1.3em;
+			font-size: 1.2em;
 			padding-top: 0;
 		}
 
@@ -1759,7 +1759,7 @@ aside .populaire{
 		display: flex;
 	}
 	.description_pop{
-		width: 550px;
+		width: 530px;
 		height: 150px;
 	}
 	a:-webkit-any-link {
@@ -1825,6 +1825,7 @@ aside .populaire{
 	}
 	ul h2:nth-child(1){
 		font-size: 1.2em;
+		padding-left: 5%;
 	}
 	li h3{	
 		font-size: 0.8em;
@@ -1859,11 +1860,16 @@ aside .populaire{
 	footer h1{
 		font-size: 0.8em;
 	}
+}
+
+/* ************************************************RESPONSIVE MIN-WIDTH 320px MAX-WIDTH 750px ******************************* */
+
+@media screen and (min-width:320px) and (max-width:750px){
+	
+
 
 
 }
-
-
 
 
 
