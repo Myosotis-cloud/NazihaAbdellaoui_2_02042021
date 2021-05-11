@@ -14,6 +14,7 @@ body *{
 	margin: auto;
 	padding-left: 5%;
 	padding-right: 5%;
+	overflow: hidden;
 }
 
 /* ******DEBUT HEADER********* */
@@ -952,6 +953,7 @@ footer h1{
 		padding-left: 3%;
 		padding-right: 3%;
 		padding-top: 5%;
+		overflow: hidden;
 	}
 
 	header
@@ -1280,15 +1282,16 @@ i.fa-map-marker-alt{
 		font-size: 0.8em;
 	}
 }
-/* ******RESPONSIVE TABLETTES MAX WIDTH 768px******* */
+/* *************************************RESPONSIVE TABLETTES MAX WIDTH 768px*************************************************** */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px){
+
 	body{
 		margin: 0 0;
 		max-width: 768px;
-		margin-top: 17px;
 		padding-bottom: 0;
 		margin-bottom: 0;
+		margin-top: 60px;
 	}
 	body *{
 		box-sizing: border-box;
@@ -1297,24 +1300,27 @@ i.fa-map-marker-alt{
 	{
 		max-width: 768px;
 		margin: auto;
-		padding-left: 5%;
-		padding-right: 5%;
+		overflow: hidden;
 	}
 
 	header
 {
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 80px 100px;
+	width: 100%;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 80px 120px;
 	padding-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 	.nav2{
 		width: 100%;
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
-		font-size: 1em;
+		font-size: 1.2em;
 		display: inline-flex;
-		justify-content: flex-start;
+		justify-content:space-evenly;
+		align-items: flex-start;
 	}
 	.nav1 img{
 		width: 100%;
@@ -1322,16 +1328,13 @@ i.fa-map-marker-alt{
 		grid-row: 1 / 2;
 		display: flex;
 		justify-content: center;
-		/*align-items: flex-start;*/
+		align-items: center;
 	}
 
 	#logo-reservia{
-		width: 100px;
-		display: flex;
-		justify-content: flex-end;
+		width: 130px;
 		}
 	.head-title{
-			width: 100%;
 			grid-column: 1 / span 3;
 			grid-row: 2 / 3;
 		}
@@ -1347,33 +1350,40 @@ i.fa-map-marker-alt{
 			grid-column: 1 / span 3;
 			grid-row: 2 / 3;
 			flex-wrap: wrap;
-			font-size: 1.2em;
+			font-size: 1.3em;
 			padding-top: 0;
 		}
 
 	.search_zone_contenair{
 		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
 		grid-template-columns: 100%;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 50% 30% 30% 20%;
+		padding-bottom: 25%;
+		row-gap: 10%;
+	}
+	.search_bare{
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
 	}
 
 	input 
 	{
 	width: 100%;
 	text-align: center;
-	transition: all 0.5s ease-out;
-	font-size: 1em;
-	height: 45px;
-	width: 350px;
+	font-size: 1.3em;
+	height: 3em;
+	width: 20em;
 	}
 
 	i.fa-map-marker-alt{
-	font-size: 0.9em;
+	font-size: 1.3em;
 	background-color: #F2F2F2;
 	border: #F2F2F2 solid;
 	border-radius: 8px 0 0 8px;
-	width: 45px;
-	height: 45px;
+	width: 3em;
+	height: 3em;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;		
@@ -1387,9 +1397,9 @@ i.fa-map-marker-alt{
 		text-align: center;
 		border-radius: 10px 10px 10px 10px;
 		font-weight: bold;
-		font-size: 1em;
-		height: 50px;
-		width: 50px;
+		font-size: 1.3em;
+		height: 3em;
+		width: 3em;
 		background-color: #0065FC;
 		color: white;
 		border:none;
@@ -1397,7 +1407,7 @@ i.fa-map-marker-alt{
 	.button2:hover{
 		box-shadow: 0 0 6px 3px darkgrey;
 		font-weight: bold;
-		font-size: 0.8em;
+		font-size: 1.3em;
 		transition: none;
 		cursor: pointer;
 	}	
@@ -1405,35 +1415,48 @@ i.fa-map-marker-alt{
 
 .filtres{
 	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-	width: 100%;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-	font-size: 0.8em;
+	grid-row: 2 / span 4;
+	font-size: 1em;
+	flex-wrap: wrap;
 	display:inline-flex;
-	justify-content:space-around;
+	justify-content:space-between;
 	align-items: center;
-	padding-top: 2%;
 }
+.filtres h1{
+	font-size: 1em;
+	position: relative;
+	right: 1em;
+	left: 0.4em;
+}
+
+#bouton_filtres{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
+}
+
 .budget{
-	display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-	border:solid #F2F2F2 2px;
-	width: 140px;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	width: 180px;
 	border-radius: 30px 30px 30px 30px;
 	color:black;
 	background-color: white;
-	transition: all 1s ease-out;
+	transition: all 0.5s ease-out;
 }
 .composition{
-	display: flex;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	/*display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;*/
     flex-wrap: wrap;
 	border:solid #F2F2F2 2px;
-	width: 110px;
+	width: 140px;
 	border-radius: 30px 30px 30px 30px;
 	color:black;
 	background-color: white;
@@ -1441,52 +1464,234 @@ i.fa-map-marker-alt{
 
 }
 .ambiance{
-	display: flex;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	/*display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;*/
     flex-wrap: wrap;
 	border:solid #F2F2F2 2px;
-	width: 140px;
-	border-radius: 30px 30px 30px 30px;
-	color:black;
-	background-color: white;
-	transition: all 1s ease-out;
-}
-.animaux{
-	display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
 	width: 180px;
 	border-radius: 30px 30px 30px 30px;
 	color:black;
 	background-color: white;
-	border:#F2F2F2 solid 2px;
-	transition: all 1s ease-out;
+	transition: all 0.5s ease-out;
 }
-.hebergement{
+.animaux{
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+	position: relative;
+	left: 6em;
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+	width: 230px;
+	border-radius: 30px 30px 30px 30px;
+	color:black;
+	background-color: white;
+	border:#F2F2F2 solid 2px;
+	transition: all 0.5s ease-out;
+}
+.room_available{
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
 	display: inline-flex;
 	justify-content: flex-start;
-	padding-top: 3%;
+	align-items: center;
+	padding-top: 15%;
+}
+.room_available p{
+	font-size: 1em;
+	position: relative;
+	left: 8px;
+}
+i.fa-info-circle{
+	font-size: 18px;
+	border: 1px solid;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: white;
+	background-color: #0065FC;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+i.fa-info-circle, .room_available p{
+	display: inline-block;
+	justify-content: start;
+	align-items: center;
+}
+section .hebergement{
 	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 20%;
+	row-gap: 8%;
+	margin-top: 8%;
+	display: grid;
+	justify-content: flex-start;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 50%);
+	grid-template-areas:
+	"A"
+	"a";
 }
 .hebergement_marseille_container{
+	grid-area: a;
 	background-color: #F2F2F2;
-	row-gap: 2%;
-	column-gap: 1%;
-	padding-left: 1%;
+	border-radius: 15px 15px 15px 15px;
+	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	padding-right: 3%;
-	margin-right: 1%;
-	padding-bottom: 5%;
-	padding-top: 2%;
+	flex-direction: column;
 }
+aside .populaire{
+	grid-area: A;
+	background-color: #F2F2F2;
+	border-radius: 15px 15px 15px 15px;
+	display:flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	
+}
+aside .populaire{
+	width: 100%;
+	background-color: #F2F2F2;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex-direction: column;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"h2"
+	"populaire_carte_contenair1"
+	"populaire_carte_contenair2"
+	"populaire_carte_contenair3";
+}
+#populaire_carte_contenair1{
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	padding-left: 0;
+	margin-left: 0;
+	grid-area: populaire_carte_contenair1 ;
+	display: flex;
+	justify-content: flex-start;
+	box-shadow: 0 0 6px 3px darkgrey;
+	margin: auto;
+	padding: auto;
+	border-radius: 15px;
+}
+#populaire_carte_contenair2{
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+	grid-area: populaire_carte_contenair2;
+	display: flex;
+	justify-content: flex-start;
+	box-shadow: 0 0 6px 3px darkgrey;
+	margin: auto;
+	padding: auto;
+	border-radius: 15px;
+
+}
+
+#populaire_carte_contenair3{
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
+	grid-area: populaire_carte_contenair3;
+	display: flex;
+	justify-content: flex-start;
+	box-shadow: 0 0 6px 3px darkgrey;
+	margin: auto;
+	padding: auto;
+	border-radius: 15px;
+
+}
+#populaire_carte_contenair1:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+	border-radius: 15px 15px 15px 15px;
+	margin: auto;
+	padding: auto;
+}
+#populaire_carte_contenair2:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+	border-radius: 15px 15px 15px 15px;
+	margin: auto;
+	padding: auto;
+}
+#populaire_carte_contenair3:hover{
+	box-shadow: 0 0 6px 3px darkgrey;
+	border-radius: 15px 15px 15px 15px;
+	margin: auto;
+	padding: auto;
+}
+
+.hebergement_marseille_container{
+	background-color: #F2F2F2;
+	row-gap: 2.5%;
+	column-gap: 3%;
+	padding-left: 7%;
+	justify-content: center;
+	align-items: center;
+	padding-right: 7%;
+	margin-right:auto;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50px 1fr 1fr 40px;
+	grid-template-areas: 
+	"h2 h2 h2"
+	"cannebiere port mouettes"
+	"mer panier amina"
+	"following-sections following_sections following_sections";
+}
+
+
+.hebergement_marseille_container h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 1.2em;
+	grid-area: h2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+.next_section{
+	grid-area: following-sections;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 800;
+	padding-left: 5px;
+	display: flex;
+	justify-content: flex-start;
+	align-items:flex-start;
+}
+.next_section a{
+	font-size: 1em;
+}
+#chez_amina{
+	grid-area: amina;
+}
+#les_mouettes{
+	grid-area: mouettes;
+}
+#la_cannebiere{
+	grid-area: cannebiere;
+}
+#le_panier{
+	grid-area: panier;
+}
+#le_port{
+	grid-area: port;
+}
+#la_mer{
+	grid-area: mer;
+}
+
 .hebergement_marseille_container img{
 	width: 200px;
 	height: 100px;
-	object-fit: cover;
-	object-position: center;
 	border: 2px white solid;
 	border-bottom: white 5px solid;
 	border-radius: 15px 15px 0px 0px;
@@ -1499,10 +1704,10 @@ i.fa-map-marker-alt{
 		font-size: 1em;
 	}
 	.hotel_description h3{
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 	.hotel_description p{
-		font-size: 0.7em;
+		font-size: 0.9em;
 	}
 	.hotel_description{
 		border: white solid;
@@ -1516,31 +1721,33 @@ i.fa-map-marker-alt{
 		padding-top: 6px;
 	}
 	.stars_icon{
-		font-size: 0.6em;
+		font-size: 1em;
 		display: flex;
 	}
 	.next_section a{
-		font-size: 0.7em;
+		font-size: 1em;
 	}
 	.hebergement_marseille_container h2{
 		font-size: 1.2em;
 	}
 	.populaire{
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		align-items: flex-start;
-		row-gap: 3%;
-		margin-left: 1%;
-		border-radius: 15px;
-		padding-left: 2%;
-		padding-right: 2%;
-		padding-top: 2%;
-		margin-left: 0;
-		margin-right: 0;
+		row-gap: 5%;
+		padding-bottom: 20%;
+		margin-left: -4%;
+		margin-right: 8%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 15%;
+		width: 100%;
 	}
 		aside h2{
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
-		display: inline-block;
+		padding-left: 10px;
+		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
 		font-family: 'Raleway', sans-serif;
@@ -1548,36 +1755,37 @@ i.fa-map-marker-alt{
 		font-size: 1.2em;
 	}
 	i.fa-chart-line{
-		font-size: 1.2em;
+		font-size: 1.5em;
+		display: flex;
 	}
 	.description_pop{
-		width: 140px;
-		height: 100px;
+		width: 550px;
+		height: 150px;
 	}
 	a:-webkit-any-link {
 		color: -webkit-link;
 		cursor: pointer;
 	}
 	.photo_populaire img{
-		width: 115px;
-		height: 100px;
+		width: 160px;
+		height: 150px;
 		object-fit: cover;
 		border-radius: 15px 0px 0px 15px;
-		border: solid white 3px;
+		border: solid white 5px;
 		margin: 0;
 		padding-bottom: 0;
 	}
 	
 	aside h3{
-		font-size: 0.8em;
+		font-size: 1.1em;
+		width: 35%;
 	}
 	aside p{
-		font-size: 0.7em;
+		font-size: 1em;
 	}
 
 	#activite_marseille{
 		max-width: 768px;
-		padding-top: 1%;
 		padding-bottom: 2%;
 	}
 	/*.activites-container-main{
@@ -1612,7 +1820,7 @@ i.fa-map-marker-alt{
 		padding-right: 0;
 		column-gap: 2%;
 		row-gap: 3%;
-		grid-template-columns: repeat(4, 220px);
+		grid-template-columns: repeat(4, 170px);
 		grid-template-rows: 60px 150px 150px;
 	}
 	ul h2:nth-child(1){
@@ -1621,7 +1829,10 @@ i.fa-map-marker-alt{
 	li h3{	
 		font-size: 0.8em;
 		padding-left: 15px;
-		height: 23px;
+		height: 35px;
+		display: flex;
+		justify-content:flex-start;
+		align-items: flex-start;
 	}
 	ul li a{
 		width: 100%;
