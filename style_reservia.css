@@ -393,9 +393,9 @@ i.fa-info-circle, .room_available p{
 	justify-content: start;
 	align-items: center;
 }
-/* ****FIN FILTRES + LIGNE DISPONIBILITE ****** */
+/* *************************************************FIN FILTRES + LIGNE DISPONIBILITE ***************************************** */
 
-/* *********DEBUT SECTION "HEBERGEMENT A MARSEILLE + ASIDE******* */
+/* *********************************************DEBUT SECTION "HEBERGEMENT A MARSEILLE + ASIDE************************************* */
 
 section .hebergement-container-Main{
 	display: grid;
@@ -1878,62 +1878,133 @@ aside .populaire{
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	padding-bottom: 2%;
-	padding-left: 1%;
-	padding-right: 1%;
 }
 #registration-mobile{
-	grid-column: 2 / -3;
-	grid-row: 1 / 2;
 	display: flex;
+	justify-content: flex-end;
 }
+.registration{
+font-size: 0.9em;
+grid-column: 2 / 3;
+grid-row: 1 / 2;
+display: inline-flex;
+}
+
 .nav1 img{
 	display: flex;
 }
 
-#registration-mobile, .nav1 img{
-	grid-column: 1 / span 3;
+.registration, .nav1 img{
+	/*grid-column: 1 / span 3;
 	grid-row: 1 / 2;
-	font-size: 1em;
+	font-size: 1em;*/
 	display: inline-block;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 /*.nav2 a:hover{
 	display: none;
 }*/
 .nav2{
 	width: 100%;
+	row-gap: 3%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+	/*line-height: 5em;
+	height: 5em;*/
 }
 .nav2{
 	position: absolute;
 }
 
 #logo-reservia{
-	width: 130px;
+	width: 100px;
+	grid-column: 1 /2;
+	grid-row: 1 / 2;
 }
 .nav-mobile{
 	width: 100%;
-	grid-column: 1 / span 3;
+	grid-column: 1 / 2;
 	grid-row: 2 / 3;
 	display: flex;
-	justify-items: flex-start;
-	height: 0;
-	line-height: 0;
+	justify-content: center;
+	align-items: center;
+	/*position: relative;
+	right: 4em;*/
 }
 .nav-mobile-activite{
 	width: 100%;
-	grid-column: 1 / span 3;
+	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+	align-items: center;
+	/*position: relative;
+	font-size: 0.9em;
+	top: 1em;
+	left: 5em;
+	bottom: 0.5em;*/
 }
 
-.nav2 .nav-mobile, .nav2 .nav-mobile-activite{
+.nav-mobile, .nav-mobile-activite{
 display: inline-block;
-flex-direction: row-reverse;
 justify-content: space-between;
+align-items: center;
+}
+
+.nav2 .registration a{
+	font-family: 'Raleway',sans-serif;
+	font-weight: 600;
+	color: #0065FC;
+	transition: all 0.2s ease-out;
+}
+.nav2 a{
+	font-size: 0.9em;
+	text-decoration: none;
+	color:black;
+}
+
+.nav2 .nav-mobile a{
+	width: 50%;
+	border-top: none;
+	border-bottom: 2px solid #0065FC;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 3em;
+	margin-left: -35px;
+}
+
+.nav2 .nav-mobile a:visited{
+	color: #0065FC;
+}
+
+.nav2 .nav-mobile-activite a:hover{
+	border-top: none;
+	border-bottom: 2px solid #0065FC;
+	color: #0065FC;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 3em;
+}
+.nav-mobile-activite a{
+	border-top: none;
+	color: black;
+	transition: all 0.5s ease-out;
+	width: 50%;
+	border-top: none;
+	border-bottom: 2px solid #F2F2F2;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 3em;
+}
+  
+  .nav-mobile-activite a:hover{
+	color: #333;
+	background-color: #fff;
+}
+
+.nav2 .nav-mobile-activite a{
+	color: black;
 }
 
 .head-title{
@@ -1944,7 +2015,8 @@ header .head-title h1{
 		grid-column: 1 / 2;
 		grid-row: 3 / 4;
 		flex-wrap: wrap;
-		font-size: 1.2em;
+		text-align: justify;
+		font-size: 1.3em;
 		padding-bottom: 0;
 		margin-bottom: 0;
 	}
