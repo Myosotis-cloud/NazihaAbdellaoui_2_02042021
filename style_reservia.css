@@ -1,4 +1,4 @@
-@media screen and (max-width:2560px){
+@media screen and (max-width:2700px){
 
 body{
 	margin: 0 0;
@@ -11,7 +11,7 @@ body *{
 }
 #wrapper
 {
-	max-width: 2560px;
+	max-width: 2700px;
 	margin: auto;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -417,7 +417,7 @@ section .hebergement-container-Main{
 	width: 100%;
 	display: grid;
 	justify-content: center;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-template-areas:
 	"a a a A"
@@ -433,6 +433,7 @@ section .hebergement-container-Main{
 	justify-content: center;
 }
 .logement_carte{
+	width: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -469,7 +470,7 @@ section .hebergement-container-Main{
 	padding-bottom: 10%;
 	padding-top: 4%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 33.5%);
 	grid-template-rows: 70px 1fr 1fr 70px;
 	grid-template-areas: 
 	"h2 h2 h2"
@@ -501,21 +502,27 @@ section .hebergement-container-Main{
 	font-size: 1.9em;
 }
 #chez_amina{
+	width: 66%;
 	grid-area: amina;
 }
 #les_mouettes{
+	width: 66%;
 	grid-area: mouettes;
 }
 #la_cannebiere{
+	width: 66%;
 	grid-area: cannebiere;
 }
 #le_panier{
+	width: 66%;
 	grid-area: panier;
 }
 #le_port{
+	width: 66%;
 	grid-area: port;
 }
 #la_mer{
+	width: 66%;
 	grid-area: mer;
 }
 .hebergement_marseille_container img{
@@ -2279,36 +2286,40 @@ i.fa-map-marker-alt{
 
 
 header{
-	/*display: grid;*/
 	grid-template-columns: 100%;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	height: 300vh;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-auto-rows: auto;
 }
 
-.head-title h1{
+header .head-title h1{
 	width: 100%;
 	grid-column: 1 / 2;
 	grid-row: 4 / 5;
 	flex-wrap: wrap;
 	text-align: justify;
-	font-size: 1.3em;
+	font-size: 1.9em;
 	padding-bottom: 0;
 	margin-bottom: 0;
+	position: relative;
+	top: 5em;
 }
-.head-title h2{
+header .head-title h2{
 	width: 100%;
 	grid-column: 1 / 2;
 	grid-row: 4 / 5;
 	flex-wrap: wrap;
-	font-size: 1em;
+	font-size: 1.5em;
 	padding-top: 0;
+	position: relative;
+	top: 6em;
 }
 
 .nav2{
-	width: 95%;
+	width: 90%;
 	display: grid;
 	grid-template-columns: 50% 45%;
 	grid-template-rows: 1fr 1fr;
+	padding-bottom: 3%;
 	/*line-height: 5em;
 	height: 5em;*/
 }
@@ -2338,6 +2349,8 @@ header{
 	display: inline-flex;
 	justify-content: center;
 	align-items: flex-end;
+	margin-right: -25px;
+	margin-left: -5px;
 }	
 .nav2 .registration a{
 font-family: 'Raleway',sans-serif;
@@ -2406,16 +2419,19 @@ transition: all 0.2s ease-out;
 		width: 100%;
 		padding-left: 5%;
 		padding-right: 5%;
-		height: 50vh;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		padding-top: 1%;
+		flex-wrap: wrap;
+		/*height: 50vh;*/
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 80px 50px 40px 1fr;
 		grid-auto-rows: auto;
 		padding-bottom: 2%;
 		row-gap: 4%;
 	}
 
 
-#logo-reservia{
+/*#logo-reservia{
 		width: 130px;
 }
 .head-title{
@@ -2448,10 +2464,13 @@ transition: all 0.2s ease-out;
 		grid-auto-rows: auto;
 		padding-bottom: 2%;
 		row-gap: 4%;
-	}
+	}*/
 	.search_bare{
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
 	}
 
 	input 
@@ -2500,18 +2519,20 @@ transition: all 0.2s ease-out;
 
 .filtres{
 	grid-column: 1 / 2;
-	grid-row: 2 / 3;
+	grid-row: 2 / span 4;
 	font-size: 1em;
 	flex-wrap: wrap;
 	display:inline-flex;
-	justify-content:space-between;
+	justify-content:flex-start;
 	align-items: center;
 }
 .filtres h1{
 	font-size: 1em;
+	display: flex;
+	justify-content: flex-start;
+	margin-right: 20px;
 	position: relative;
-	right: 1em;
-	left: 0.4em;
+	left: 2px;
 }
 
 #bouton_filtres{
@@ -2527,11 +2548,13 @@ transition: all 0.2s ease-out;
 .budget{
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
+	flex-wrap: wrap;
 	width: 180px;
 	border-radius: 30px 30px 30px 30px;
 	color:black;
 	background-color: white;
-	transition: all 0.5s ease-out;
+	transition: all 0.2s ease-out;
+	margin-right: 20px;
 }
 .composition{
 	grid-column: 1 / 2;
@@ -2542,12 +2565,13 @@ transition: all 0.2s ease-out;
 	border-radius: 30px 30px 30px 30px;
 	color:black;
 	background-color: white;
-	transition: all 1s ease-out;
+	transition: all 0.2s ease-out;
+	margin-right: 20px;
 
 }
 .ambiance{
 	grid-column: 1 / 2;
-	grid-row: 2 / 3;
+	grid-row: 3 / span 4;
 	/*display: flex;
     align-items: center;
     justify-content: flex-start;*/
@@ -2557,36 +2581,39 @@ transition: all 0.2s ease-out;
 	border-radius: 30px 30px 30px 30px;
 	color:black;
 	background-color: white;
-	transition: all 0.5s ease-out;
+	transition: all 0.2s ease-out;
+	margin-right: 20px;
 }
 .animaux{
 	grid-column: 1 / 2;
-	grid-row: 2 / 3;
+	grid-row: 3 / span 4;
 	margin-top: 15px;
-	position: relative;
-	left: 5em;
-	display: flex;
+	/*display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;*/
     flex-wrap: wrap;
 	width: 230px;
 	border-radius: 30px 30px 30px 30px;
 	color:black;
 	background-color: white;
 	border:#F2F2F2 solid 2px;
-	transition: all 0.5s ease-out;
+	transition: all 0.2s ease-out;
 }
+
 .room_available{
 	grid-column: 1 / 2;
 	grid-row: 3 / 4;
-	display: inline-flex;
+	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-end;
 }
 .room_available p{
 	font-size: 1em;
 	position: relative;
 	left: 8px;
+	flex-wrap: wrap;
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
 }
 i.fa-info-circle{
 	font-size: 30px;
@@ -2600,6 +2627,8 @@ i.fa-info-circle{
     display: flex;
 	justify-content: center;
 	align-items: center;
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
 }
 
 i.fa-info-circle, .room_available p{
@@ -2624,10 +2653,6 @@ section .hebergement{
 .hebergement_marseille_container{
 	grid-area: a;
 	background-color: #F2F2F2;
-	border-radius: 15px 15px 15px 15px;
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
 }
 aside .populaire{
 	grid-area: A;
@@ -2710,6 +2735,7 @@ aside .populaire{
 }
 
 .hebergement_marseille_container{
+	width: 100%;
 	background-color: #F2F2F2;
 	row-gap: 2.5%;
 	column-gap: 3%;
@@ -2720,14 +2746,14 @@ aside .populaire{
 	margin-right:auto;
 	padding-bottom: 2%;
 	padding-top: 2%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 50px 1fr 1fr 40px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50px 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
-	"h2 h2 h2"
-	"cannebiere port mouettes"
-	"mer panier amina"
-	"following-sections following_sections following_sections";
+	"h2 h2"
+	"cannebiere port"
+	"mouettes mer"
+	"panier amina"
+	"following-sections following_sections";
 }
 
 
@@ -2739,6 +2765,7 @@ aside .populaire{
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
+	width: 100%;
 }
 .next_section{
 	grid-area: following-sections;
@@ -2772,8 +2799,8 @@ aside .populaire{
 }
 
 .hebergement_marseille_container img{
-	width: 200px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
 	border: 2px white solid;
 	border-bottom: white 5px solid;
 	border-radius: 15px 15px 0px 0px;
@@ -2841,16 +2868,16 @@ aside .populaire{
 		display: flex;
 	}
 	.description_pop{
-		width: 530px;
-		height: 150px;
+		width: 100%;
+		height: 100%;
 	}
 	a:-webkit-any-link {
 		color: -webkit-link;
 		cursor: pointer;
 	}
 	.photo_populaire img{
-		width: 160px;
-		height: 150px;
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
 		border-radius: 15px 0px 0px 15px;
 		border: solid white 5px;
@@ -2859,8 +2886,8 @@ aside .populaire{
 	}
 	
 	aside h3{
-		font-size: 1.1em;
-		width: 35%;
+		font-size: 1.5em;
+		width: 50%;
 	}
 	aside p{
 		font-size: 1em;
@@ -2902,7 +2929,7 @@ aside .populaire{
 		padding-right: 0;
 		column-gap: 2%;
 		row-gap: 3%;
-		grid-template-columns: repeat(4, 170px);
+		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: 60px 150px 150px;
 	}
 	ul h2:nth-child(1){
