@@ -4497,9 +4497,9 @@ footer h1{
 
 
 
-/* *************************************RESPONSIVE TABLETTES MAX WIDTH 768px*************************************************** */
+/* ********************************************RESPONSIVE TABLETTES MAX WIDTH 768px*************************************************** */
 
-@media screen and (min-width: 500px) and (max-width: 768px){
+@media screen and (max-width: 768px){
 
 	body{
 		margin: 0 0;
@@ -4512,34 +4512,60 @@ footer h1{
 	}
 	#wrapper
 	{
-		min-width: 500px;
 		max-width: 768px;
 		margin: auto;
-		/*overflow: hidden;*/
+		overflow: hidden;
 	}
 
+header{
+	padding-top: 20px;
+}
+
 .nav2{
-	width: 100%;
+	width: 96%;
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 70px 80px;
+	grid-template-columns: 48% 48%;
+	grid-template-rows: 35px 70px;
+	border-top: none;
 	/*line-height: 5em;
 	height: 5em;*/
 }
+
+.nav2 .nav-mobile-activite a:hover {
+    border-top: none;
+	color: #0065FC;
+	font-weight: 600;
+}
+.nav2 .nav-mobile a{
+	font-weight: 600;
+	color: #0065FC;
+}
+
 .nav2{
 	position: absolute;
+	border-top: none;
 }
 .registration{
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	display: inline-flex;
-	justify-content: flex-start;
-	padding-right: 130px;
+	justify-content: flex-end;
+	padding-right: 3%;
+	padding-top: 18px;
 }
+
+#logo-reservia{
+	width: 130px;
+	height: 50px;
+	padding-left: 3%;
+	display: flex;
+}
+
 .registration a{
-	font-size: 1.3em;
+	font-size: 1.5em;
+	font-weight: 900;
 }
 .nav2 .nav-mobile{
 	grid-column: 1 / 2;
@@ -4552,70 +4578,203 @@ footer h1{
 	grid-row: 2 / 3;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
+	text-align: end;
+	height: 202px;
 	/*margin-right: -25px;
 	margin-left: -5px;*/
 }	
 
 .head-title{
 	position: absolute;
-	top: 15em;
+	top: 13em;
+	padding-left: 3%;
 }
-.registration{
-	font-size: 1.5em;
+.head-title h1{
+	font-size: x-large;
+	line-height: normal;
+	flex-wrap: wrap;
 }
-	.nav2 a{
-		text-decoration: none;
-		border-top: none;
-		color:black;
+.head-title h2{
+	font-size: 1.2em;
+	flex-wrap: wrap;
+}
+.nav2 a{
+	text-decoration: none;
+	border-top: none;
+	color:black;
 }
 .nav2 .nav-mobile a{
 	border-top: none;
 	font-size: 1.5em;
 }
+
 .nav2 .nav-mobile-activite a{
 	border-top: none;
 }
-.nav2 .nav-mobile-activite a, .nav-mobile a{
-	display: inline-block;
+
+.nav-mobile-activite{
+	width: 108%;
+	display: flex;
+	justify-content: center;
+	border-top: none;
+	border-bottom: 3px solid #F2F2F2;
+	padding: 0 0;
+}
+
+.nav2 .nav-mobile-activite, .nav-mobile{
+	display: inline-flex;
+	border-top: none;
 }
 .nav-mobile-activite a{
 	font-size: 1.5em;
 	border-top: none;
+	display: flex;
+	justify-content: center;
 	}
-.nav2 .nav-mobile-activite a:hover{
+.nav-mobile-activite:hover{
 	border-top: none;
+	font-weight: 900;
+	width: 110%;
+	padding-top: 60px;
+	border-bottom: 3px solid #0065FC;
 }
-	.nav-mobile{
-		width: 100%;
-		border-top: none;
-		border-bottom: 2px solid #0065FC;
-		margin-left: -0px;
+.nav-mobile{
+	width: 110%;
+	display: flex;
+	justify-content: center;
+	border-top: none;
+	font-weight: 900;
+	border-bottom: 3px solid #0065FC;
+	margin-left: -35px;
 }
-	
-	
+
 	.search_zone_contenair{
 		width: 100%;
-		padding-left: 5%;
-		padding-right: 5%;
-		padding-top: 25%;
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-top: 15%;
 		flex-wrap: wrap;
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 80px 50px 40px 1fr;
+		grid-template-rows: 80px 100px 30px 50px;
 		grid-auto-rows: auto;
-		padding-bottom: 2%;
+		padding-bottom: 5%;
 		row-gap: 4%;
 	}
 
-
-#logo-reservia{
-		width: 130px;
-		height: 60px;
+	.submit
+	{
+		display: none;
 	}
-	
+	.button2{
+		display: inline-block;
+		align-items: center;
+		text-align: center;
+		border-radius: 20px 20px 20px 20px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+		font-size: 1.5em;
+		height: 60px;
+		width: 60px;
+		background-color: #0065FC;
+		color: white;
+		border:none;
+	}
+
+	.barre_recherche{
+		height: 60px;
+		flex-wrap: wrap;
+	}
+
+	button:hover{
+		box-shadow: 0 0 6px 3px darkgrey;
+		transition: box-shadow 0.2s;
+		cursor: pointer;
+	}
+
+	i.fa-map-marker-alt{
+		font-size: 1.3em;
+		background-color: #F2F2F2;
+		border: #F2F2F2 solid;
+		border-radius: 15px 0 0 15px;
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;		
+	}
+
+	i.fa-map-marker-alt:hover{
+	background-color: #F2F2F2;
+	color: black;
+	}
+
+	input{
+		text-align: center;
+		font-family: 'Raleway',sans-serif;
+		background-color: white;
+		transition: none;
+		color: black;
+		font-weight: 900;
+		color: black;
+		border-top:#F2F2F2 solid 1px;
+		border-bottom: #F2F2F2 solid 1px;
+		border-left: none;
+		border-right: none;
+		font-size: 1.3em;
+		display: flex;
+		flex-wrap: wrap;
+		height: 60px;
+		width: 500px;
+	}
+
+	input::placeholder{
+		color: black;
+		opacity: 1;
+	}
+	input:hover,
+	input:focus{
+		background-color: white;
+	}
+
+.filtres {
+	width: 100%;
+	font-size: 1em;
+	flex-wrap: wrap;
+}
+.filtres h1{
+	font-size: 1em;
+}
+
+.budget{
+	width: 170px;
+}
+.composition{
+	width: 130px;
+}
+.ambiance{
+	width: 170px;
+}
+.animaux{
+	width: 210px;
+	margin-top: 20px;
+}
+
+.room_available{
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
+   
+}
+.room_available p{
+	position: relative;
+    font-size: 0.9em;
+    left: 8px;
+}
+
 section .hebergement{
 	width: 100%;
+	padding-top: 3%;
 	display: grid;
 	justify-content: center;
 	grid-template-columns: repeat(1, 100%);
@@ -4631,16 +4790,16 @@ section .hebergement{
 }
 .hebergement_marseille_container{
 	width: 100%;
-	background-color: #F2F2F2;
-	row-gap: 3%;
+	background-color: white;
+	row-gap: 2%;
 	column-gap: 3%;
 	padding-left: 2%;
 	justify-content: center;
 	align-items: center;
 	padding-right: 2%;
-	margin-right: 1%;
-	padding-bottom: 10%;
-	padding-top: 4%;
+	/*margin-right: 1%;*/
+	padding-bottom: 5%;
+	padding-top: 2%;
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
 	grid-template-rows: 70px 1fr 1fr 1fr 70px;
@@ -4661,35 +4820,37 @@ aside .populaire{
 	display: grid;
 	justify-content: center;
 	background-color: #F2F2F2;
-	row-gap: 3.5%;
-	margin-left: 1%;
-	border-radius: 20px;
-	padding-left: 2%;
-	padding-right: 2%;
-	padding-top: 4%;
+	row-gap: 2%;
+	margin-left: -25px;
+	margin-right: -150px;
+	border-radius: 0px;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 2%;
 	padding-bottom: 5%;
 	grid-template-columns: 100%;
-	grid-template-rows: 70px 1fr 1fr 1fr;
+	grid-template-rows: 50px 1fr 1fr 1fr;
 	grid-template-areas: 
 	"h2"
 	"populaire_carte_contenair1"
 	"populaire_carte_contenair2"
 	"populaire_carte_contenair3";
 }
-#activite_marseille .activites-container-main ul{
-		width: 50%;
+
+/*#activite_marseille{
+		width: 100%;
 		padding-top: 2%;
-		/*margin-left: -20px;*/
+		/*margin-left: -20px;
 		list-style-type: none;
 		flex-wrap: wrap;
-		column-gap: 2%;
-		row-gap: 2%;
-		display: flex;
-	}
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}*/
 
 #activite_marseille{
 	width: 100%;
-	padding-top: 20%;
+	padding-top: 2%;
 	padding-bottom: 5%;
 }
 /*.activites-container-main{
@@ -4700,39 +4861,167 @@ aside .populaire{
 	margin-right: auto;
 }*/
 
-ul li img{
+li a{
 	object-fit: cover;
 	object-position: center;
 	width: 100%;
 	height: 300px;
-	display: flex;
-	flex-wrap: wrap;
 }
 
-/*#vieux_port{
-	height: 300px;
-	width: 50%;
+.activites-container-main ul{
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+	margin-left: -20px;
+	margin-right: auto;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2%;
+	row-gap: 3%;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: 50px 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	grid-template-areas: 
+	"z z"
+	"a b"
+	"f d"
+	"e c";
+}
+ul h2:nth-child(1){
+	grid-area: z;
+	display: flex;
+	justify-content: flex-start;
+	font-size: 1.3em;
+}
+
+li h3{
+	width: 100%;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 800;
+	font-size: 1.5em;
+	padding-left: 15px;
+	border-radius: 0 0 20px 20px;
+	border-top: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+}
+
+#vieux_port{
+	height: 250px;
+	width: 100%;
 }
 #pomegues{
-	width: 50%;
-	height: 300px;
+	width: 100%;
+	height: 250px;
 }
 #Frioul{
-	height: 300px;
-	width: 50%;
+	height: 250px;
+	width: 100%;
 }
 #parc_calanques{
-	height: 300px;
-	width: 50%;
+	height: 250px;
+	width: 100%;
 }
 #Notre-Dame{
-	height: 300px;
+	height: 250px;
 	width: 100%;
 }
 #Longchamp{
-	height: 300px;
+	height: 250px;
 	width: 100%;
-}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul li a{
+	width: 100%;
+	display: block;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+li:nth-child(2){
+	grid-area: a;
+}
+
+li:nth-child(3){
+	grid-area: b;
+
+}
+li:nth-child(4){
+	grid-area: c;
+}
+li:nth-child(5){
+	grid-area: d;
+}
+li:nth-child(6){
+	grid-area:e;
+}
+li:nth-child(7){
+	grid-area: f;	
+}
+
 
 ul h2{
 	display: flex;
@@ -4780,9 +5069,9 @@ li h3{
 
 
 
-/* ************************************************RESPONSIVE MOBILE********MAX-WIDTH 425px************************************ */
+/* ************************************************RESPONSIVE MOBILE********MAX-WIDTH 400px************************************ */
 
-@media screen and (max-width:425px){
+@media screen  and (min-width:320px) and (max-width:400px){
 	
 	body{
 		margin: 0 0;
@@ -4795,16 +5084,42 @@ li h3{
 	}
 	#wrapper
 	{
-		max-width: 425px;
+		min-width: 320px;
+		max-width: 400px;
 		margin: auto;
 	}
 
 	header{
 	width: 100%;
-	grid-template-columns: 1fr;
+	grid-template-columns: 100%;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	padding-bottom: 2%;
 }
+.activites-container-main ul{
+	width: 100%;
+	padding-top: 3%;
+	margin-left: -20px;
+	margin-right: auto;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2%;
+	row-gap: 2%;
+	display: grid;
+	grid-template-columns: repeat(1, 100%);
+	grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	grid-template-areas: 
+	"z"
+	"a"
+	"b"
+	"f"
+	"d"
+	"e" 
+	"c";
+}
+
+
 #registration-mobile{
 	display: flex;
 	justify-content: flex-end;
@@ -4830,38 +5145,17 @@ display: inline-flex;
 /*.nav2 a:hover{
 	display: none;
 }*/
-.nav2{
-	width: 100%;
-	row-gap: 3%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	/*line-height: 5em;
-	height: 5em;*/
-}
-.nav2{
-	position: absolute;
-}
 
 #logo-reservia{
 	width: 100px;
-	grid-column: 1 /2;
-	grid-row: 1 / 2;
 }
 .nav-mobile{
 	width: 100%;
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	/*position: relative;
 	right: 4em;*/
 }
 .nav-mobile-activite{
 	width: 100%;
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -4925,6 +5219,7 @@ align-items: center;
 }
   
   .nav-mobile-activite a:hover{
+	display: none;
 	color: #333;
 	background-color: #fff;
 }
@@ -4933,13 +5228,7 @@ align-items: center;
 	color: black;
 }
 
-.head-title{
-	grid-column: 1 / 2;
-	grid-row: 3 / 4;
-}
 header .head-title h1{
-		grid-column: 1 / 2;
-		grid-row: 3 / 4;
 		flex-wrap: wrap;
 		text-align: justify;
 		font-size: 1.3em;
@@ -4959,7 +5248,7 @@ header .head-title h2{
 	padding-left: 5%;
 	padding-right: 5%;
 	height: 60vh;
-	grid-template-columns: 1fr;
+	grid-template-columns: 100%;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-auto-rows: auto;
 	padding-bottom: 2%;
