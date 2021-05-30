@@ -1,4 +1,4 @@
-@media screen and (max-width:2700px){
+@media screen and (max-width:2600px){
 
 body{
 	margin: 0 0;
@@ -11,7 +11,7 @@ body *{
 }
 #wrapper
 {
-	max-width: 2700px;
+	max-width: 2600px;
 	margin: auto;
 	padding-left: 3%;
 	padding-right: 3%;
@@ -154,11 +154,13 @@ line-height: 200px;
 	grid-template-rows: 1fr 1fr 1fr;
 }
 .search_bare{
+	width: 100%;
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 }
 	
 .barre_recherche{
+	flex: 1 1;
 	display: inline-flex;
 	align-items:center;
 	text-align: center;
@@ -804,7 +806,7 @@ aside p{
 	text-align: start;
 	font-weight: 400;
 	line-height: 50px;
-	font-size: 1.7em;
+	font-size: 1.6em;
 	margin: 0;
 	padding: 0;
 }
@@ -2647,7 +2649,7 @@ aside p{
 	flex-wrap: wrap;
 	font-family: 'Raleway',sans-serif;
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 0.9em;
 	margin: 0;
 	padding: 0;
 	line-height: 30px;
@@ -4650,14 +4652,14 @@ header{
 }
 
 	.search_zone_contenair{
-		width: 100%;
 		padding-left: 3%;
 		padding-right: 3%;
-		padding-top: 15%;
+		padding-top: 18%;
+		width: 90vw;
 		flex-wrap: wrap;
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 80px 100px 30px 50px;
+		grid-template-rows: 70px 90px 30px 50px;
 		grid-auto-rows: auto;
 		padding-bottom: 5%;
 		row-gap: 4%;
@@ -4683,7 +4685,7 @@ header{
 	}
 
 	.barre_recherche{
-		height: 60px;
+		width: 100%;
 		flex-wrap: wrap;
 	}
 
@@ -4711,6 +4713,7 @@ header{
 	}
 
 	input{
+		flex: 1 1;
 		text-align: center;
 		font-family: 'Raleway',sans-serif;
 		background-color: white;
@@ -4726,7 +4729,7 @@ header{
 		display: flex;
 		flex-wrap: wrap;
 		height: 60px;
-		width: 500px;
+		width: 90vw;
 	}
 
 	input::placeholder{
@@ -4739,7 +4742,7 @@ header{
 	}
 
 .filtres {
-	width: 100%;
+	width: 90vw;
 	font-size: 1em;
 	flex-wrap: wrap;
 }
@@ -4827,8 +4830,8 @@ aside .populaire{
 	border-radius: 0px;
 	padding-left: 5%;
 	padding-right: 5%;
-	padding-top: 2%;
-	padding-bottom: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	grid-template-columns: 95%;
 	grid-template-rows: 50px 1fr 1fr 1fr;
 	grid-template-areas: 
@@ -4908,8 +4911,6 @@ aside .stars_icon {
    font-size: 1em;
 }
 
-
-
 /*#activite_marseille{
 		width: 100%;
 		padding-top: 2%;
@@ -4944,7 +4945,7 @@ li a{
 .activites-container-main ul{
 	width: 100%;
 	padding-top: 3%;
-	padding-bottom: 5%;
+	padding-bottom: 10%;
 	margin-left: -20px;
 	margin-right: auto;
 	list-style-type: none;
@@ -5008,65 +5009,6 @@ li h3{
 	width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ul li a{
 	width: 100%;
 	display: block;
@@ -5095,7 +5037,6 @@ li:nth-child(7){
 	grid-area: f;	
 }
 
-
 ul h2{
 	display: flex;
 	justify-content: flex-start;
@@ -5116,35 +5057,203 @@ li h3{
 #activite_marseille a{
 	color: black;
 }
+
 #activite_marseille a:hover{
 	color:#0065FC;
 }
 
+footer{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 3%;
+	margin-bottom: 0;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	padding-left: 0;
+	padding-right: 0;
+    background-color: #F2F2F2;
+}
+
+.populaire{
+	width: 110%;
+	row-gap: 0%;
+	margin-left: -25px;
+	/*margin-right: -20px;*/
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+
+}
 
 
+/* **************************************************************MAX WIDTH 600PX**************************************** */
+@media screen and (max-width:600px){
 
+	.search_zone_contenair{
+		padding-top: 25%;
+	}
+	.filtres {
+		width: 75vw;
+		font-size: 0.9em;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.filtres h1{
+		font-size: 0.8em;
+	}
+	
+	.budget{
+		width: 160px;
+	}
+	.composition{
+		width: 120px;
+	}
+	.ambiance{
+		width: 160px;
+		margin-top: 20px;
+	}
+	.animaux{
+		width: 210px;
+		margin-top: 20px;
+	}
+	
+	input{
+		font-size: 1.2em;
+	}
+	.button2{
+		font-size: 1.2em;
+	}
+
+	i.fa-map-marker-alt{
+		font-size: 1.2em;
+	}
+	.nav-mobile-activite{
+		width: 108%;
+		display: flex;
+		justify-content: center;
+		border-top: none;
+		border-bottom: 3px solid #F2F2F2;
+		padding-left: -150px;
+		padding-right: -80px;
+	}
+	
+	.nav2 .nav-mobile-activite, .nav-mobile{
+		display: inline-flex;
+		border-top: none;
+	}
+	.nav-mobile-activite a{
+		font-size: 1.5em;
+		border-top: none;
+		display: flex;
+		justify-content: center;
+		}
+	.nav-mobile-activite:hover{
+		border-top: none;
+		font-weight: 900;
+		width: 110%;
+		padding-top: 60px;
+		border-bottom: 3px solid #0065FC;
+	}
+	.nav-mobile{
+		width: 110%;
+		display: flex;
+		justify-content: center;
+		border-top: none;
+		font-weight: 900;
+		border-bottom: 3px solid #0065FC;
+		margin-left: -35px;
+	}
+
+	aside h2{
+		font-size: 1.4em;
+	}
+	.populaire{
+		padding-top: 2%;
+	}
+
+	aside h3{
+		font-size: 1.2em;
+		}
+	aside p {
+		width: 100%;
+		line-height: 30px;
+		font-size: 1em;
+	}
+
+	.next_section a{
+		font-size: 0.8em;
+		padding-top: 0;
+	 }
+	 .hebergement_marseille_container h2{
+		font-size: 1.4em;
+	}
+
+	i.fa-chart-line {
+		font-size: 1.4em;
+	}
+}
+/* *****************************************************MAX WIDTH 500PX************************************* */
+@media screen and (max-width:500px){
+	
+	.filtres {
+		width: 85vw;
+		font-size: 0.9em;
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+	.search_zone_contenair{
+		padding-top: 28%;
+	}
+	aside h2{
+		font-size: 1.2em;
+	}
+	.populaire{
+		padding-top: 2%;
+	}
+
+	aside h3{
+		font-size: 1em;
+	}
+
+	aside p {
+		width: 100%;
+		line-height: 30px;
+		font-size: 0.9em;
+	}
+
+	.next_section a{
+		font-size: 0.8em;
+		padding-top: 0;
+	 }
+	 .hebergement_marseille_container h2{
+		font-size: 1.2em;
+	}
+
+	i.fa-chart-line {
+		font-size: 1.2em;
+	}
+	li h3{
+		font-size: 0.8em;
+	}
+	.populaire{
+		width: 110%;
+		row-gap: 5%;
+		margin-left: -25px;
+		/*margin-right: -20px;*/
+		padding-top: 1%;
+		padding-bottom: 1%;
+		grid-template-columns: 95%;
+		grid-template-rows: 50px 170px 170px 170px;
+	}
 
 
 }
 
 
+/* ************************************************RESPONSIVE MOBILE********MAX-WIDTH 425px************************************ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ************************************************RESPONSIVE MOBILE********MAX-WIDTH 400px************************************ */
-
-@media screen  and (min-width:320px) and (max-width:400px){
+@media screen  and (min-width:320px) and (max-width:425px){
 	
 	body{
 		margin: 0 0;
@@ -5158,7 +5267,7 @@ li h3{
 	#wrapper
 	{
 		min-width: 320px;
-		max-width: 400px;
+		max-width: 425px;
 		margin: auto;
 	}
 
