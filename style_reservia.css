@@ -5171,7 +5171,7 @@ i.fa-chart-line{
 		font-size: 1.6em;
 	}
 }
-/* ****************************MOBILE RESPONSIVE***MIN WIDTH 320PX-MAX WIDTH 500PX******************************** */
+/* ****************************MOBILE RESPONSIVE***MAX WIDTH 500PX******************************** */
 @media screen  and (max-width:500px){
 	
 	body{
@@ -5187,6 +5187,12 @@ i.fa-chart-line{
 	{
 		max-width: 500px;
 		margin: auto;
+	}
+
+	.room_available p {
+		position: relative;
+		font-size: 0.8em;
+		left: 8px;
 	}
 	
 	.filtres{
@@ -5416,9 +5422,91 @@ li h3{
 	padding-top: 2%;
 	padding-bottom: 8em;
 }
+.details_pop {
+    width: 80%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+aside p {
+    width: 100%;
+    line-height: 30px;
+    font-size: 0.9em;
+}
 
 }
-/* **********************************************400px*********************************** */
-@media screen and (max-width:400px){
-	
+/* **********************************************405px*********************************** */
+@media screen and (max-width:405px){
+	body{
+		margin: 0 0;
+		max-width: 100%;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	body *{
+		box-sizing: border-box;
+	}
+	#wrapper
+	{
+		max-width: 405px;
+		margin: auto;
+	}
+
+	.barre_recherche {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	input{
+		flex: 1 1;
+		width: 50vw;
+	}
+	.search_zone_contenair{
+		padding-top: 30%;
+	}
+	.head-title{
+		flex-wrap: wrap;
+		padding-right: 2%;
+	}
+	.head-title h1 {
+		font-size: x-large;
+		line-height: normal;
+		flex-wrap: wrap;
+	}
+	.head-title h2 {
+		font-size: 1em;
+		flex-wrap: wrap;
+	}
+	ul h2:nth-child(1) {
+		font-size: 1.2em;
+	}
+}
+
+/* *****************************************************max-width 375px*********************************** */
+@media screen and (max-width:375px){
+	#wrapper
+	{
+		max-width: 375px;
+		margin: auto;
+	}
+	.search_zone_contenair {
+		padding-top: 32%;
+	}
+	.room_available{
+		display: inline-flex;
+	}
+
+	.room_available p{
+		display: inline-flex;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: top;
+	}
+	i.fa-info-circle {
+		position: relative;
+		bottom: 8px;
+	}
+	.details_pop {
+		width: 95%;
+		padding-top: 20px;
+		padding-left: 10px;
+}
 }
