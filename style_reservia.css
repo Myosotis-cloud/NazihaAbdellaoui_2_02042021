@@ -4517,6 +4517,13 @@ footer h1{
 		margin: auto;
 		overflow: hidden;
 	}
+	.nav-mobile-activite:hover{
+		display: none;
+	}
+	.nav2 .nav-mobile-activite a:hover {
+		padding-top: none;
+		border-top: none;
+	}
 
 header{
 	padding-top: 20px;
@@ -5188,6 +5195,18 @@ i.fa-chart-line{
 		max-width: 500px;
 		margin: auto;
 	}
+	.nav2 .registration a:hover, .nav2 .registration a:focus{
+		display: none;
+		font-weight: none;
+	}
+	.nav2 .registration a {
+		font-family: 'Raleway',sans-serif;
+		font-weight: 700;
+		color: #0065FC;
+		transition: none;
+	}
+
+
 
 	.room_available p {
 		position: relative;
@@ -5494,6 +5513,13 @@ aside p {
 		display: inline-flex;
 	}
 
+	header{
+		width: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 1fr 1fr;
+		padding-bottom: 2%;
+		}
+
 	.room_available p{
 		display: inline-flex;
 		justify-content: flex-start;
@@ -5509,4 +5535,158 @@ aside p {
 		padding-top: 20px;
 		padding-left: 10px;
 }
+}
+/* ******************************************MOBILE PLUS PETITES RESOLUTIONS DE 320PX******************************* */
+@media screen and (max-width:320px){
+
+	#wrapper
+	{
+		max-width: 320px;
+		margin: auto;
+	}
+	.search_zone_contenair {
+		padding-top: 9em;
+	}
+
+	.head-title {
+		position: absolute;
+		top: 10em;
+		padding-left: 3%;
+	}
+
+	.head-title h1 {
+		font-size: 1.2em;
+		line-height: normal;
+		flex-wrap: wrap;
+	}
+	.nav-mobile{
+		line-height: 50px;
+	}
+	.nav2 .nav-mobile a {
+		border-top: none;
+		font-size: 1.2em;
+	}
+
+	.nav-mobile-activite a {
+		font-size: 1.2em;
+		border-top: none;
+	}
+	.nav2 .nav-mobile-activite{
+	line-height: 50px;
+	height: 113px;
+}
+.registration a {
+    font-size: 1.3em;
+}
+.registration, .nav1 a{
+	display: inline-flex;
+}
+.nav1 img{
+	height: 50px;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+.nav2 {
+    grid-template-rows: 40px 70px;
+}
+.head-title{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.head-title h2 {
+    font-size: 0.9em;
+    flex-wrap: wrap;
+}
+.filtres{
+	font-size: 0.9em;
+}
+aside h3 {
+    font-size: 0.9em;
+}
+aside p {
+    width: 100%;
+    font-size: 0.8em;
+}
+aside .stars_icon{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+
+aside.populaire{
+padding-left: 30px;
+}
+
+.photo_populaire img{
+    width: 100%;
+    height: 150px;
+}
+
+.populaire {
+    row-gap: 0%;
+}
+
+section .hebergement {
+    grid-template-rows: 600px 1fr;
+}
+
+.description_pop {
+    height: 150px;
+}
+
+input{
+	flex: 1 1;
+	width: 50vw;
+	font-size: 0.9em;
+}
+.button2 {
+    font-size: 1.2em;
+}
+.nav2 .nav-mobile-activite a:hover{
+	padding-top: none;
+	border-top: none;
+	}
+
+#logo-reservia{
+	width: 130px;
+	height: 50px;
+	padding-left: 3%;
+	display: flex;
+	}
+
+header{
+	width: 100%;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 1fr;
+	padding-bottom: 2%;
+	}
+	.budget, .composition{
+		display: inline-flex;
+	}
+	.budget{
+		width: 150px;
+		margin-right: 10px;
+	}
+	.composition{
+		width: 120px;
+	}
+	
+	.ambiance, .animaux{
+		display: inline-flex;
+	}
+	.ambiance{
+		width: 160px;
+		margin-top: 10px;
+		margin-right: 40px;
+	}
+
+	.animaux{
+		width: 200px;
+		margin-top: 10px;
+	}
+
+
+
+
 }
