@@ -2201,8 +2201,7 @@ input
 input::placeholder{
 	color: black;
 	opacity: 1;
-	text-align: start;
-	padding-left: 20px;
+	text-align: center;
 }
 input:hover,
 input:focus{
@@ -5206,6 +5205,16 @@ i.fa-chart-line{
 		transition: none;
 	}
 
+	li h3 {
+		font-size: 1em;
+		padding-left: 15px;
+		border-radius: 0 0 20px 20px;
+		border-top: none;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 30px;}
+
 	.room_available p {
 		position: relative;
 		font-size: 0.8em;
@@ -5354,12 +5363,8 @@ padding-bottom: 2%;
 }
 ul li a {
     width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: flex-end;
-    border-radius: 15px 15px 15px 15px;
     box-shadow: 0 0 6px 3px darkgrey;
-    transition: all 0.5s ease-out;
+	transition: none;
 }
 
 
@@ -5416,10 +5421,6 @@ li a{
 	height: 160px;
 }
 
-li h3{
-	height: 30px;
-}
-
 #vieux_port{
 	height: 160px;
 	width: 100%;
@@ -5455,7 +5456,7 @@ li h3{
     padding-top: 20px;
     padding-left: 10px;
 }
-aside p {
+aside p{
     width: 100%;
     line-height: 30px;
     font-size: 0.9em;
