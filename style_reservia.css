@@ -5206,8 +5206,6 @@ i.fa-chart-line{
 		transition: none;
 	}
 
-
-
 	.room_available p {
 		position: relative;
 		font-size: 0.8em;
@@ -5276,38 +5274,39 @@ i.fa-chart-line{
 		row-gap: 2%;
 	}
 
-	.room_available{
+.room_available{
 	grid-column: 1 / 2;
 	grid-row: 3 / 4;
 	}
 
-	.search_zone_contenair{
-		padding-top: 27%;
+.search_zone_contenair{
+	padding-top: 27%;
 	}
-	aside h2{
-		font-size: 1.2em;
-	}
-
-	aside h3{
-		font-size: 1em;
+aside h2{
+	font-size: 1.2em;
 	}
 
-	aside p {
-		width: 100%;
-		line-height: 30px;
-		font-size: 0.8em;
+aside h3{
+	font-size: 1em;
 	}
 
-	.next_section a{
-		font-size: 0.8em;
-		padding-top: 0;
-	 }
-	 .hebergement_marseille_container h2{
-		font-size: 1.2em;
+aside p {
+	width: 100%;
+	line-height: 30px;
+	font-size: 0.8em;
 	}
 
-	i.fa-chart-line {
-		font-size: 1.2em;
+.next_section a{
+	font-size: 0.8em;
+	padding-top: 0;
+}
+
+.hebergement_marseille_container h2{
+	font-size: 1.2em;
+	}
+
+i.fa-chart-line {
+	font-size: 1.2em;
 	}
 	li h3{
 		font-size: 0.8em;
@@ -5353,6 +5352,16 @@ padding-bottom: 2%;
 	"e" 
 	"c";
 }
+ul li a {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 6px 3px darkgrey;
+    transition: all 0.5s ease-out;
+}
+
 
 footer{
 	width: 100%;
@@ -5453,7 +5462,7 @@ aside p {
 }
 
 }
-/* **********************************************405px*********************************** */
+/* ********************************************max width: 405px*************************************************** */
 @media screen and (max-width:405px){
 	body{
 		margin: 0 0;
@@ -5507,10 +5516,51 @@ aside p {
 		margin: auto;
 	}
 	.search_zone_contenair {
-		padding-top: 32%;
+		padding-top: 10em;
 	}
+	.nav-mobile-activite a {
+		font-size: 1.6em;
+	}
+
+	aside .stars_icon{
+		padding-left: 10px;
+	}
+
+	aside h3{
+		font-size: 1.1em;
+	}
+
+	aside p{
+	font-size: 1em;
+}
+
+	section .hebergement{
+		grid-template-rows: 670px 1fr;
+}
+
+	.nav2 .nav-mobile a{
+		font-size: 1.6em;
+	}
+	.logement_carte{
+		box-shadow: 0 0 6px 2px #F2F2F2;
+	}
+
+	.budget, .composition {
+		display: inline-flex;
+	}
+
+	.budget {
+		width: 170px;
+		margin-right: 10px;
+	}
+
 	.room_available{
 		display: inline-flex;
+	}
+
+	.hebergement_marseille_container {
+		margin-top: 20px;
+		row-gap: 1%;
 	}
 
 	header{
@@ -5534,8 +5584,91 @@ aside p {
 		width: 95%;
 		padding-top: 20px;
 		padding-left: 10px;
+	}
+
+.activites-container-main ul {
+    width: 100%;
+    padding-top: 4em;
+    margin-bottom: 90%;
+    margin-left: -20px;
+    margin-right: auto;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2%;
+    row-gap: 8%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	li a{
+		width: 100%;
+		height: 130px;
+	}
+	li h3, img{
+		display: flex;
+		justify-content: flex-start;
+		border: #F2F2F2 1px solid;
+		box-sizing: border-box;
+	}	
+	li h3{
+		width: 100%;
+		font-family: 'Raleway',sans-serif;
+		font-weight: 800;
+		font-size: 0.9em;
+		padding-left: 15px;
+		border-radius: 0 0 15px 15px;
+		border-top: none;
+	}
+	ul li a {
+		width: 100%;
+		display: block;
+		justify-content: center;
+		align-items: flex-end;
+		border-radius: 15px 15px 15px 15px;
+		box-shadow: 0 0 6px 3px darkgrey;
+		transition: all 0.5s ease-out;
+	}
+
+	footer a{
+		font-size: 0.8em;
+	}
+
+
+	#vieux_port{
+		height: 140px;
+		width: 100%;
+	}
+	
+	#pomegues{
+		width: 100%;
+		height: 140px;
+	}
+	
+	#Frioul{
+		height: 140px;
+		width: 100%;
+	}
+	
+	#parc_calanques{
+		height: 140px;
+		width: 100%;
+	}
+	
+	#Notre-Dame{
+		height: 140px;
+		width: 100%;
+	}
+	
+	#Longchamp{
+		height: 140px;
+		width: 100%;
+	}
+
+
 }
-}
+
 /* ******************************************MOBILE PLUS PETITES RESOLUTIONS DE 320PX******************************* */
 @media screen and (max-width:320px){
 
@@ -5552,6 +5685,15 @@ aside p {
 		position: absolute;
 		top: 10em;
 		padding-left: 3%;
+	}
+	ul li a {
+		width: 100%;
+		display: block;
+		justify-content: center;
+		align-items: flex-end;
+		border-radius: 15px 15px 15px 15px;
+		box-shadow: 0 0 6px 3px darkgrey;
+		transition: all 0.5s ease-out;
 	}
 
 	.head-title h1 {
