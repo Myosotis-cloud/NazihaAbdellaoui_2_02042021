@@ -184,13 +184,7 @@ line-height: 200px;
 	font-weight:bold;
 	cursor: pointer;
 }
-/*.budget:hover{
-	color:white;
-	background-color:#0065FC;
-	border:#0065FC solid 2px;
-	font-weight:bold;
-	cursor: pointer;
-}*/
+
 .composition:hover,
 .composition:focus{
 	color:white;
@@ -301,7 +295,7 @@ i.fa-map-marker-alt:hover{
 	justify-content:space-between;
 	align-items: center;
 }
-.filtres h1{
+.filtres h3{
 	display:flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -1122,7 +1116,7 @@ footer h1{
 	justify-content:space-between;
 	align-items: center;
 }
-.filtres h1{
+.filtres h3{
 	font-size: 1em;
 }
 
@@ -1347,7 +1341,7 @@ footer h1{
 	justify-content:space-between;
 	align-items: center;
 }
-.filtres h1{
+.filtres h3{
 	font-size: 1em;
 }
 .populaire{
@@ -2244,7 +2238,7 @@ i.fa-map-marker-alt:hover{
 	align-items: center;
 	padding-top: 3%;
 }
-.filtres h1{
+.filtres h3{
 	display:flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -3273,11 +3267,11 @@ footer h1{
 		justify-content:space-between;
 		align-items: center;
 	}
-	.filtres h1{
+	.filtres h3{
 		display:flex;
 		justify-content: flex-start;
 		align-items: center;
-		font-size: 0.8em;
+		font-size: 0.9em;
 		font-family: 'Raleway',sans-serif;
 		font-weight: 800;
 		/*position: relative;
@@ -3598,8 +3592,8 @@ button:hover{
 	width: 90%;
 	font-size: 0.9em;
 }
-.filtres h1{
-	font-size: 0.8em;
+.filtres h3{
+	font-size: 0.9em;
 }
 
 #bouton_filtres{
@@ -4353,7 +4347,7 @@ footer h1{
 		width: 90%;
 		font-size: 0.8em;
 	}
-	.filtres h1{
+	.filtres h3{
 		font-size: 0.8em;
 	}
 	
@@ -4754,7 +4748,7 @@ header{
 	font-size: 1em;
 	flex-wrap: wrap;
 }
-.filtres h1{
+.filtres h3{
 	font-size: 1em;
 }
 
@@ -5079,13 +5073,13 @@ i.fa-chart-line{
 	.search_zone_contenair{
 		padding-top: 25%;
 	}
-	.filtres {
+	.filtres{
 		width: 75vw;
 		font-size: 0.9em;
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.filtres h1{
+	.filtres h3{
 		font-size: 0.8em;
 	}
 	
@@ -5228,7 +5222,7 @@ i.fa-chart-line{
 		display:block;
 		flex-direction: column;
 	}
-	.filtres h1{
+	.filtres h3{
 		font-size: 1em;
 	}
 	input{
@@ -5471,6 +5465,7 @@ aside p{
 		padding-bottom: 0;
 		margin-bottom: 0;
 	}
+	
 	body *{
 		box-sizing: border-box;
 	}
@@ -5479,7 +5474,9 @@ aside p{
 		max-width: 405px;
 		margin: auto;
 	}
-
+.nav1 a{
+	border: none;
+}
 	.barre_recherche {
 		width: 100%;
 		flex-wrap: wrap;
@@ -5790,7 +5787,9 @@ input{
 	padding-top: none;
 	border-top: none;
 	}
-
+	.nav1 a{
+		border: none;
+	}
 #logo-reservia{
 	width: 130px;
 	height: 50px;
@@ -5803,14 +5802,17 @@ header{
 	grid-template-columns: 100%;
 	grid-template-rows: 1fr 1fr;
 	padding-bottom: 2%;
-	}
-	.budget, .composition{
-		display: inline-flex;
-	}
-	.budget{
-		width: 150px;
-		margin-right: 10px;
-	}
+}
+
+.budget, .composition{
+	display: inline-flex;
+}
+
+.budget{
+width: 150px;
+margin-right: 10px;
+}
+
 	.composition{
 		width: 120px;
 	}
@@ -5828,8 +5830,9 @@ header{
 		width: 200px;
 		margin-top: 10px;
 	}
-
-
-
-
+	#activite_marseille {
+		width: 100%;
+		padding-top: 2%;
+		padding-bottom: 10em;
+	}
 }
