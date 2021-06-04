@@ -209,6 +209,56 @@ line-height: 200px;
 	color: white;
 	font-weight: bold;
 	margin-right: 5px;
+	background-color: #deebff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+	margin-right: 15px;
+    text-align: center;
+    line-height: 100px;
+    color: #0065FC;
+}
+#bouton_filtres_composition{
+	background-color: #0065FC;
+	color: white;
+	font-weight: bold;
+	margin-right: 5px;
+	background-color: #deebff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+	margin-right: 15px;
+    text-align: center;
+    line-height: 100px;
+    color: #0065FC;
+}
+#bouton_filtres_ambiance{
+	background-color: #0065FC;
+	color: white;
+	font-weight: bold;
+	margin-right: 5px;
+	background-color: #deebff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+	margin-right: 15px;
+    text-align: center;
+    line-height: 100px;
+    color: #0065FC;
+}
+#bouton_filtres_animaux{
+	background-color: #0065FC;
+	color: white;
+	font-weight: bold;
+	margin-right: 5px;
+	background-color: #deebff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+	margin-right: 15px;
+    text-align: center;
+    line-height: 100px;
+    color: #0065FC;
 }
 
 i.fa-map-marker-alt{
@@ -222,6 +272,7 @@ i.fa-map-marker-alt{
 	justify-content: center;
 	align-items: center;		
 }
+
 input 
 {
 	text-align: center;
@@ -239,14 +290,15 @@ input
 	height: 100px;
 	width: 500px;
 }
+
 input::placeholder{
 	color: black;
 	opacity: 1;
 }
+
 input:hover,
 input:focus{
-	background-color: #deebff;
-
+background-color: #deebff;
 }
 .submit
 {
@@ -276,6 +328,7 @@ i.fa-map-marker-alt:hover{
 	font-weight: bold;
 	color: darkgrey;
 	background-color: white;
+	border: 2px solid;
 }
 
 .filtres{
@@ -301,16 +354,6 @@ i.fa-map-marker-alt:hover{
 	right: 4em;*/
 }
 
-#bouton_filtres{
-	background-color: #deebff;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-	margin-right: 15px;
-    text-align: center;
-    line-height: 100px;
-    color: #0065FC;
-}
 
 .budget{
 	display: flex;
@@ -1073,8 +1116,6 @@ header
 	width: 100%;
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-	/*padding-right: 20px;
-	padding-left: auto;*/
 	font-size: 0.9em;
 	height: 103px;
 	line-height: 103px;
@@ -1126,11 +1167,8 @@ line-height: 100px;
 .head-title h2{
 	font-size: 1.4em;
 }
-
-/* ******FIN HEADER****** */
-
-/* *****DEBUT FILTRES**** */
-
+/* *************FIN HEADER****** */
+/* ***********DEBUT FILTRES**** */
 .search_zone_contenair{
 	width: 100%;
 	padding-top: 1%;
@@ -1231,11 +1269,39 @@ i.fa-map-marker-alt:hover{
 	font-size: 1em;
 	font-family: 'Raleway',sans-serif;
 	font-weight: 800;
-	/*position: relative;
-	right: 5px;*/
 }
 
 #bouton_filtres{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
+	margin-right: 10px;
+}
+#bouton_filtres_composition{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
+	margin-right: 10px;
+}
+#bouton_filtres_ambiance{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
+	margin-right: 10px;
+}
+#bouton_filtres_animaux{
 	background-color: #deebff;
     height: 50px;
     width: 50px;
@@ -1810,15 +1876,8 @@ footer h1{
 /* ****************************************************MAX-WIDTH 1024PX* ********************************************************** */
 
 @media screen and (max-width: 1024px){
-	
-	
-	#wrapper
-	{
-		max-width: unset !important;
-	}	
 
-	header
-{
+	header{
 	width: 100%;
 	grid-template-columns: 55% 45%;
 	grid-template-rows: 140px 100px;
@@ -1863,11 +1922,8 @@ footer h1{
 	font-size: 1em;
 	flex-wrap: wrap;
 }
-
 /* ****FIN HEADER****** */
-
 /* ****DEBUT FILTRES****** */
-
 .search_zone_contenair{
 	width: 100%;
 	flex-wrap: wrap;
@@ -1886,7 +1942,7 @@ footer h1{
 }
 
 #bouton_filtres{
-	margin-right: 5px;
+	margin-right: 3px;
 }
 
 i.fa-map-marker-alt{
@@ -1956,18 +2012,58 @@ button:hover{
     line-height: 40px;
     color: #0065FC;
 }
+#bouton_filtres{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
+	margin-right: 10px;
+}
+#bouton_filtres_composition{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
+	margin-right: 10px;
+}
+#bouton_filtres_ambiance{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
+	margin-right: 10px;
+}
+#bouton_filtres_animaux{
+	background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #0065FC;
+	margin-right: 10px;
+}
 
 .budget{
-	width: 160px;
+	width: 180px;
 }
 .composition{
-	width: 120px;
+	width: 140px;
 }
 .ambiance{
-	width: 160px;
+	width: 180px;
 }
 .animaux{
-	width: 210px;
+	width: 230px;
 }
 
 .room_available{
@@ -2335,28 +2431,14 @@ footer h1{
 
 @media screen and (max-width: 768px){
 
-	body{
-		margin: 0 0;
-		width: 100%;
-		padding-bottom: 0;
-		margin-bottom: 0;
-	}
-	body *{
-		box-sizing: border-box;
-	}
-	#wrapper
-	{
-		max-width: unset !important;
-		margin: auto;
-		overflow: hidden;
-	}
-	.nav-mobile-activite:hover{
-		display: none;
-	}
-	.nav2 .nav-mobile-activite a:hover {
-		padding-top: 0;
-		border-top: none;
-	}
+.nav-mobile-activite:hover{
+display: none;
+}
+
+.nav2 .nav-mobile-activite a:hover {
+padding-top: 0;
+border-top: none;
+}
 
 header{
 	padding-top: 20px;
@@ -2370,8 +2452,6 @@ header{
 	grid-template-columns: 48% 48%;
 	grid-template-rows: 35px 70px;
 	border-top: none;
-	/*line-height: 5em;
-	height: 5em;*/
 }
 
 .nav2 .nav-mobile-activite a:hover {
@@ -2581,6 +2661,7 @@ header{
 .filtres {
 	width: 90vw;
 	font-size: 1em;
+	display: flex;
 	flex-wrap: wrap;
 }
 .filtres h3{
@@ -2588,17 +2669,20 @@ header{
 }
 
 .budget{
-	width: 170px;
+	width: 180px;
 }
 .composition{
-	width: 130px;
+	width: 140px;
 }
 .ambiance{
-	width: 170px;
+	width: 180px;
 }
 .animaux{
-	width: 210px;
+	width: 230px;
 	margin-top: 20px;
+}
+.ambiance, .animaux{
+	display: inline-flex;
 }
 
 .room_available{
@@ -2873,15 +2957,15 @@ li h3{
 	height: 30px;
 }
 
-#activite_marseille a{
+/*#activite_marseille a{
 	color: black;
-}
+}*/
 
-#activite_marseille a:hover{
+/*#activite_marseille a:hover{
 	color:#0065FC;
-}
+}*/
 
-footer{
+/*footer{
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -2892,13 +2976,41 @@ footer{
 	padding-left: 0;
 	padding-right: 0;
     background-color: #F2F2F2;
-}
+}*/
 
 i.fa-chart-line{
 	font-size: 1.6em;
-}
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ****************************MOBILE RESPONSIVE***MAX WIDTH 500PX - min width 320px******************************** */
 @media screen and (min-width:320px) and (max-width:500px) {
@@ -2952,7 +3064,6 @@ i.fa-chart-line{
 
 	input{
 		flex: 1 1;
-
 	}
 
 	.barre_recherche{
