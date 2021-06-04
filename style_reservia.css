@@ -175,7 +175,7 @@ line-height: 200px;
 .budget:focus{
 	color:white;
 	background-color:#0065FC;
-	border:#0065FC solid 2px;
+	border:solid 2px;
 	font-weight:bold;
 	cursor: pointer;
 }
@@ -184,7 +184,7 @@ line-height: 200px;
 .composition:focus{
 	color:white;
 	background-color:#0065FC;
-	border:#0065FC solid 2px;
+	border:solid 2px;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -192,14 +192,14 @@ line-height: 200px;
 .ambiance:focus{
 	color:white;
 	background-color:#0065FC;
-	border:#0065FC solid 2px;
+	border:solid 2px;
 	font-weight: bold;
 	cursor: pointer;
 }
 .animaux:hover,
 .animaux:focus{
 	background-color:#0065FC;
-	border:#0065FC solid 2px;
+	border:solid 2px;
 	color:white;
 	font-weight: bold;
 	cursor: pointer;
@@ -383,7 +383,7 @@ i.fa-info-circle{
     height: 60px;
     line-height: 60px;
     color: white;
-	border-color: #F2F2F2 2px solid;
+	border-color: #F2F2F2 solid;
 	background-color: #0065FC;
     display: flex;
 	justify-content: center;
@@ -539,7 +539,7 @@ section a{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
 	margin: auto;
-	padding: auto;
+	padding: 0;
 	border-radius: 20px;
 }
 
@@ -653,7 +653,7 @@ aside .populaire{
 	box-shadow: 0 0 6px 3px darkgrey;
 	border-radius: 20px 20px 20px 20px;
 	margin: auto;
-	padding: auto;
+	padding: 0;
 }
 #populaire_carte_contenair1 i.fas{
 	color: #0065FC;
@@ -683,7 +683,7 @@ aside .populaire{
 	box-shadow: 0 0 6px 3px darkgrey;
 	border-radius: 20px 20px 20px 20px;
 	margin: auto;
-	padding: auto;
+	padding: 0;
 }
 #populaire_carte_contenair3{
 	width: 100%;
@@ -698,7 +698,7 @@ aside .populaire{
 	box-shadow: 0 0 6px 3px darkgrey;
 	border-radius: 20px 20px 20px 20px;
 	margin: auto;
-	padding: auto;
+	padding: 0;
 }
 .graph_icon{
 	display: inline-flex;
@@ -732,10 +732,10 @@ i.fa-chart-line{
 	flex-direction: column;
 	padding-bottom: 30px;
 }
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
+a{
+cursor: pointer;
 }
+
 .details_pop{
 	width: 100%;
 	display: flex;
@@ -1289,7 +1289,7 @@ i.fa-info-circle{
 	height: 35px;
 	line-height: 35px;
 	color: white;
-	border-color: #F2F2F2 1px solid;
+	border-color: #F2F2F2 solid;
 	background-color: #0065FC;
 	display: flex;
 	justify-content: center;
@@ -1514,7 +1514,7 @@ section a{
 	box-shadow: 0 0 6px 3px darkgrey;
 	border-radius: 15px 15px 15px 15px;
 	margin: auto;
-	padding: auto;
+	padding: 0;
 }
 #populaire_carte_contenair1 i.fas{
 	color: #0065FC;
@@ -1581,10 +1581,11 @@ i.fa-chart-line{
 	display: flex;
 	flex-direction: column;
 }
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
+
+a{
+cursor: pointer;
 }
+
 .details_pop{
 	display: flex;
 	flex-direction: column;
@@ -1592,6 +1593,7 @@ a:-webkit-any-link {
 	align-items: flex-start;
 	padding-left: 5px;
 }
+
 aside .stars_icon{
 	display: flex;
 	flex-direction: row;
@@ -1986,7 +1988,7 @@ i.fa-info-circle{
     height: 20px;
     line-height: 20px;
     color: white;
-	border-color: #F2F2F2 1px solid;
+	border-color: #F2F2F2 solid;
 	background-color: #0065FC;
 }
 
@@ -2095,10 +2097,8 @@ section a{
 	width: 100%;
 	padding-left: 10px;
 	padding-bottom: 7px;
-	background-color: white;
 	color: black;
 	display: flex;
-	/*flex-wrap: wrap;*/
 	flex-direction: column;
 	line-height: 17px;
 }
@@ -2151,10 +2151,10 @@ i.fa-chart-line{
 	flex-direction: column;
 	padding-bottom: 10px;
 }
-a:-webkit-any-link {
-    color: -webkit-link;
+a{
     cursor: pointer;
 }
+
 .details_pop{
 	width: 100%;
 	padding-top: 20px;
@@ -2353,7 +2353,7 @@ footer h1{
 		display: none;
 	}
 	.nav2 .nav-mobile-activite a:hover {
-		padding-top: none;
+		padding-top: 0;
 		border-top: none;
 	}
 
@@ -2535,8 +2535,6 @@ header{
 
 	i.fa-map-marker-alt{
 		font-size: 1.3em;
-		background-color: #F2F2F2;
-		border: #F2F2F2 solid;
 		border-radius: 15px 0 0 15px;
 		width: 60px;
 		height: 60px;
@@ -2913,7 +2911,7 @@ i.fa-chart-line{
 
 	.nav2 .registration a:hover, .nav2 .registration a:focus{
 		display: none;
-		font-weight: none;
+		font-weight: normal;
 	}
 	.nav2 .registration a {
 		font-family: 'Raleway',sans-serif;
@@ -3016,7 +3014,7 @@ aside h2{
 }
 
 aside h3{
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
 aside p{
@@ -3028,7 +3026,7 @@ aside p{
 aside .stars_icon {
     width: 100%;
     padding-left: 10px;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .next_section a{
@@ -3037,7 +3035,7 @@ aside .stars_icon {
 }
 
 .hebergement_marseille_container h2{
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 i.fa-chart-line {
@@ -3183,7 +3181,7 @@ li a{
 }
 
 .details_pop {
-    width: 80%;
+    width: 85%;
     padding-top: 20px;
     padding-left: 10px;
 }
@@ -3206,19 +3204,21 @@ transition: all 0.5s ease-out;
 line-height: 50px;
 }
 
-	.nav2 .nav-mobile a {
-		border-top: none;
-		font-size: 1.2em;
-	}
-
-	.nav-mobile-activite a {
-		font-size: 1.2em;
-		border-top: none;
-	}
-	.nav2 .nav-mobile-activite{
-	line-height: 50px;
-	height: 119px;
+.nav2 .nav-mobile a{
+border-top: none;
+font-size: 1.2em;
 }
+
+.nav-mobile-activite a{
+font-size: 1.2em;
+border-top: none;
+}
+
+.nav2 .nav-mobile-activite{
+line-height: 50px;
+height: 119px;
+}
+
 .registration a {
     font-size: 1.3em;
 }
@@ -3292,7 +3292,7 @@ input{
     font-size: 1.2em;
 }
 .nav2 .nav-mobile-activite a:hover{
-	padding-top: none;
+	padding-top: 0;
 	border-top: none;
 	}
 
