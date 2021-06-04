@@ -214,7 +214,7 @@ line-height: 200px;
 i.fa-map-marker-alt{
 	font-size: 2em;
 	background-color: #F2F2F2;
-	border: #F2F2F2 solid;
+	border: none;
 	border-radius: 15px 0 0 15px;
 	width: 100px;
 	height: 100px;
@@ -383,7 +383,7 @@ i.fa-info-circle{
     height: 60px;
     line-height: 60px;
     color: white;
-	border-color: #F2F2F2 solid;
+	border-color: #F2F2F2;
 	background-color: #0065FC;
     display: flex;
 	justify-content: center;
@@ -1289,7 +1289,7 @@ i.fa-info-circle{
 	height: 35px;
 	line-height: 35px;
 	color: white;
-	border-color: #F2F2F2 solid;
+	border-color: #F2F2F2;
 	background-color: #0065FC;
 	display: flex;
 	justify-content: center;
@@ -1445,7 +1445,7 @@ section a{
 }
 .hotel_description{
 	width: 100%;
-	border: white solid;
+	border: none;
 	border-radius: 0 0 15px 15px;
 	margin: 0;
 	padding-left: 12px;
@@ -1988,7 +1988,7 @@ i.fa-info-circle{
     height: 20px;
     line-height: 20px;
     color: white;
-	border-color: #F2F2F2 solid;
+	border-color: #F2F2F2;
 	background-color: #0065FC;
 }
 
