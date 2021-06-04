@@ -10,7 +10,6 @@ body *{
 }
 #wrapper
 {
-	max-width: 2600px;
 	margin: auto;
 	padding-left: 3%;
 	padding-right: 3%;
@@ -21,7 +20,6 @@ body *{
 header
 {
 	display: grid;
-	width: 100%;
 	border-bottom: none;
 	font-family: 'Raleway';
 	grid-template-columns: 66% 34%;
@@ -40,8 +38,6 @@ header
 	width: 100%;
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-	/*padding-right: 20px;
-	padding-left: auto;*/
 	font-size: 1.8em;
 	grid-area: group-nav-container;
 	display: inline-flex;
@@ -1062,24 +1058,6 @@ footer h1{
 
 /* *********************************************************MAX-WIDTH 1440PX*********************************************** */
 @media screen and (max-width:1440px){
-
-body{
-	margin: 0 0;
-	width: 100%;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-body *{
-	box-sizing: border-box;
-}
-#wrapper
-{
-	max-width: 1440px;
-	margin: auto;
-	padding-left: 3%;
-	padding-right: 2%;
-	overflow: hidden;
-}
 
 /* ******DEBUT HEADER********* */
 header
@@ -2712,7 +2690,7 @@ aside .populaire{
     border-radius: 0px 20px 20px 0px;
     background-color: white;
     color: black;
-    width: 120%;
+    width: 125%;
     height: 170px;
 }
 
@@ -2932,6 +2910,7 @@ i.fa-chart-line{
 		max-width: 500px;
 		margin: auto;
 	}
+
 	.nav2 .registration a:hover, .nav2 .registration a:focus{
 		display: none;
 		font-weight: none;
@@ -2944,7 +2923,7 @@ i.fa-chart-line{
 	}
 
 	li h3 {
-		font-size: 1em;
+		font-size: 0.8em;
 		padding-left: 15px;
 		border-radius: 0 0 20px 20px;
 		border-top: none;
@@ -2960,28 +2939,30 @@ i.fa-chart-line{
 	}
 	
 	.filtres{
-		width: 50vw;
+		width: auto;
 		padding-bottom: 5%;
-		font-size: 1em;
+		font-size: 0.9em;
 		display:block;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
+
 	.filtres h3{
-		font-size: 1em;
+		font-size: 0.8em;
 	}
+
 	input{
 		flex: 1 1;
 
 	}
-	.barre_recherche {
+
+	.barre_recherche{
 		width: 100%;
 		flex-wrap: wrap;
 	}
 
 	.budget, .composition{
 		display: inline-flex;
-		justify-content: space-around;
 	}
 	
 	.budget{
@@ -2996,7 +2977,6 @@ i.fa-chart-line{
 	.ambiance{
 	width: 160px;
 	margin-top: 10px;
-	margin-right: 40px;
 	}
 	
 	.animaux{
@@ -3008,7 +2988,7 @@ i.fa-chart-line{
 		margin-right: 8px;
 	}
 
-	.search_zone_contenair {
+	.search_zone_contenair{
 		width: 100%;
 		padding-left: 3%;
 		padding-right: 3%;
@@ -3032,18 +3012,24 @@ i.fa-chart-line{
 	padding-top: 27%;
 	}
 aside h2{
-	font-size: 1.2em;
-	}
+	font-size: 1em;
+}
 
 aside h3{
-	font-size: 1em;
-	}
+	font-size: 0.8em;
+}
 
-aside p {
+aside p{
 	width: 100%;
 	line-height: 30px;
-	font-size: 0.8em;
-	}
+	font-size: 0.7em;
+}
+
+aside .stars_icon {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 0.8em;
+}
 
 .next_section a{
 	font-size: 0.8em;
@@ -3052,14 +3038,11 @@ aside p {
 
 .hebergement_marseille_container h2{
 	font-size: 1.2em;
-	}
+}
 
 i.fa-chart-line {
-	font-size: 1.2em;
-	}
-	li h3{
-		font-size: 0.8em;
-	}
+font-size: 1.2em;
+}
 
 .populaire{
 width: 110%;
@@ -3101,6 +3084,7 @@ padding-bottom: 2%;
 	"e" 
 	"c";
 }
+
 ul li a {
     width: 100%;
     box-shadow: 0 0 6px 3px darkgrey;
@@ -3121,7 +3105,8 @@ footer{
 	padding-right: 0;
     background-color: #F2F2F2;
 }
-.footer-nav-contenair {
+
+.footer-nav-contenair{
     display: inline-flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -3165,22 +3150,27 @@ li a{
 	height: 160px;
 	width: 100%;
 }
+
 #pomegues{
 	width: 100%;
 	height: 160px;
 }
+
 #Frioul{
 	height: 160px;
 	width: 100%;
 }
+
 #parc_calanques{
 	height: 160px;
 	width: 100%;
 }
+
 #Notre-Dame{
 	height: 160px;
 	width: 100%;
 }
+
 #Longchamp{
 	height: 160px;
 	width: 100%;
@@ -3191,45 +3181,31 @@ li a{
 	padding-top: 2%;
 	padding-bottom: 8em;
 }
+
 .details_pop {
     width: 80%;
     padding-top: 20px;
     padding-left: 10px;
 }
-aside p{
-    width: 100%;
-    line-height: 30px;
-    font-size: 0.9em;
+
+.search_zone_contenair{
+padding-top: 9em;
 }
 
+ul li a {
+width: 100%;
+display: block;
+justify-content: center;
+align-items: flex-end;
+border-radius: 15px 15px 15px 15px;
+box-shadow: 0 0 6px 3px darkgrey;
+transition: all 0.5s ease-out;
 }
-	.search_zone_contenair {
-		padding-top: 9em;
-	}
 
-	.head-title {
-		position: absolute;
-		top: 10em;
-		padding-left: 3%;
-	}
-	ul li a {
-		width: 100%;
-		display: block;
-		justify-content: center;
-		align-items: flex-end;
-		border-radius: 15px 15px 15px 15px;
-		box-shadow: 0 0 6px 3px darkgrey;
-		transition: all 0.5s ease-out;
-	}
+.nav-mobile{
+line-height: 50px;
+}
 
-	.head-title h1 {
-		font-size: 1.2em;
-		line-height: normal;
-		flex-wrap: wrap;
-	}
-	.nav-mobile{
-		line-height: 50px;
-	}
 	.nav2 .nav-mobile a {
 		border-top: none;
 		font-size: 1.2em;
@@ -3261,21 +3237,25 @@ aside p{
 	display: block;
 	justify-content: flex-start;
 	align-items: flex-start;
+	position: absolute;
+	top: 10em;
+	padding-left: 3%;
 }
+
+.head-title h1 {
+    font-size: 1.2em;
+    line-height: normal;
+    flex-wrap: wrap;
+    padding-right: 5px;
+}
+
+
+
 .head-title h2 {
     font-size: 0.9em;
     flex-wrap: wrap;
 }
-.filtres{
-	font-size: 0.9em;
-}
-aside h3 {
-    font-size: 0.9em;
-}
-aside p {
-    width: 100%;
-    font-size: 0.8em;
-}
+
 aside .stars_icon{
     width: 100%;
     padding-left: 10px;
@@ -3334,29 +3314,6 @@ header{
 	padding-bottom: 2%;
 }
 
-.budget, .composition{
-	display: inline-flex;
-}
-
-.budget{
-width: 150px;
-margin-right: 10px;
-}
-
-.composition{
-width: 120px;
-}
-	
-.ambiance{
-width: 160px;
-margin-top: 10px;
-margin-right: 40px;
-}
-
-.animaux{
-width: 200px;
-margin-top: 10px;
-}
 
 #activite_marseille {
 width: 100%;
