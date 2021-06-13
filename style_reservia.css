@@ -170,37 +170,12 @@ line-height: 200px;
 	border-radius: 10px 10px 10px 10px;
 }
 
-.budget:hover,
-.budget:focus{
+.hover_filter:hover,
+.hover_filter:focus{
 	color:white;
 	background-color:#0065FC;
 	border:#0065FC solid 2px;
 	font-weight:bold;
-	cursor: pointer;
-}
-
-.composition:hover,
-.composition:focus{
-	color:white;
-	background-color:#0065FC;
-	border:#0065FC solid 2px;
-	font-weight: bold;
-	cursor: pointer;
-}
-.ambiance:hover,
-.ambiance:focus{
-	color:white;
-	background-color:#0065FC;
-	border:#0065FC solid 2px;
-	font-weight: bold;
-	cursor: pointer;
-}
-.animaux:hover,
-.animaux:focus{
-	background-color:#0065FC;
-	border:#0065FC solid 2px;
-	color:white;
-	font-weight: bold;
 	cursor: pointer;
 }
 
@@ -308,50 +283,28 @@ i.fa-map-marker-alt:hover{
 	font-weight: 800;
 }
 
-.budget{
+.hover_filter{
 	display: flex;
     align-items: center;
     justify-content: flex-start;
 	border:solid #F2F2F2 2px;
-	width: 300px;
 	border-radius: 50px 50px 50px 50px;
 	color:black;
 	background-color: white;
 	transition: all 0.5s ease-out;
+}
+
+.budget{
+	width: 300px;
 }
 .composition{
-	display: flex;
-    align-items: center;
-    justify-content: flex-start;
-	border:solid #F2F2F2 2px;
 	width: 260px;
-	border-radius: 50px 50px 50px 50px;
-	color:black;
-	background-color: white;
-	transition: all 0.5s ease-out;
-
 }
 .ambiance{
-	display: flex;
-    align-items: center;
-    justify-content: flex-start;
-	border:solid #F2F2F2 2px;
 	width: 330px;
-	border-radius: 50px 50px 50px 50px;
-	color:black;
-	background-color: white;
-	transition: all 0.5s ease-out;
 }
 .animaux{
-	display: flex;
-    align-items: center;
-    justify-content: flex-start;
 	width: 410px;
-	border-radius: 50px 50px 50px 50px;
-	color:black;
-	background-color: white;
-	border:#F2F2F2 solid 2px;
-	transition: all 0.5s ease-out;
 }
 
 .room_available{
@@ -417,12 +370,6 @@ i.fa-info-circle{
 	margin: 0;
 }
 
-.next_section a{
-	font-family: 'Raleway',sans-serif;
-	font-weight: 800;
-	color: black;
-	font-size: 1em;
-}
 .hebergement .next_section a:visited{
 	color: black;
 }
@@ -430,14 +377,15 @@ i.fa-info-circle{
 	color: #0065FC;
 	font-weight: bold;
 }
-.hebergement_marseille_container{
-	width: 100%;
+
+.hebergement_marseille_container {
+    width: 100%;
     background-color: #F2F2F2;
-    row-gap: 1%;
+    row-gap: 3%;
     column-gap: 2%;
     justify-content: center;
     align-items: center;
-	padding-top: 2%;
+    padding-top: 4%;
     padding-bottom: 3%;
     display: grid;
     grid-template-columns: repeat(3, 30%);
@@ -458,6 +406,7 @@ i.fa-info-circle{
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
+	margin: 0;
 }
 .next_section{
 	width: 100%;
@@ -474,23 +423,7 @@ i.fa-info-circle{
 	font-size: 2em;
 }
 
-#chez_amina{
-	width: 100%;
-}
-#les_mouettes{
-	width: 100%;
-}
-#la_cannebiere{
-	width: 100%;
-}
-#le_panier{
-	width: 100%;
-}
-#le_port{
-	width: 100%;
-}
-
-#la_mer{
+.logement_carte img{
 	width: 100%;
 }
 
@@ -578,23 +511,23 @@ section a{
 	justify-content: space-between;
 }
 
-.populaire{
-	display: grid;
-	justify-content: center;
+.populaire {
+    display: grid;
+    justify-content: center;
     background-color: #F2F2F2;
-	row-gap: 6%;
-	border-radius: 20px;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 4%;
-	padding-bottom: 30%;
-	grid-template-columns: 100%;
-	grid-template-rows: 70px 1fr 1fr 1fr;
-	grid-template-areas: 
-	"h2"
-	"populaire_carte_contenair1"
-	"populaire_carte_contenair2"
-	"populaire_carte_contenair3";
+    row-gap: 3%;
+    border-radius: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 8%;
+    padding-bottom: 30%;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 1fr 1fr 1fr;
+    grid-template-areas:
+        "h2"
+        "populaire_carte_contenair1"
+        "populaire_carte_contenair2"
+        "populaire_carte_contenair3";
 }
 
 #populaire_carte_contenair1{
@@ -685,6 +618,7 @@ aside h2{
 	font-weight: 800;
 	font-size: 2.3em;
 	width: 100%;
+	margin: 0;
 }
 i.fa-chart-line{
 	font-size: 3em;
@@ -768,7 +702,6 @@ aside p{
 #activite_marseille{
 	width: 100%;
 	padding-top: 1%;
-	padding-bottom: 5%;
 }
 
 li img{
@@ -841,6 +774,7 @@ ul li h2{
 	font-size: 2.3em;
 	font-weight: 800;
 	font-family: 'Raleway',sans-serif;
+	margin: 0;
 }
 
 li:nth-child(1){
@@ -1031,10 +965,6 @@ input {
 	border-radius: 0 22px 22px 0;
 }
 
-.button2{
-	display: none;
-}
-
 i.custom_icon {
     height: 50px;
     width: 50px;
@@ -1045,24 +975,17 @@ i.custom_icon {
 .filtres{
 	font-size: 1.2em;
 }
-.filtres h3{
-	font-size: 1em;
-}
 
 .budget{
-    flex-wrap: wrap;
 	width: 200px;
 }
 .composition{
-    flex-wrap: wrap;
 	width: 160px;
 }
 .ambiance{
-    flex-wrap: wrap;
 	width: 200px;
 }
 .animaux{
-    flex-wrap: wrap;
 	width: 260px;
 }
 
@@ -1083,9 +1006,6 @@ i.fa-info-circle{
 }
 
 .next_section a{
-	font-family: 'Raleway',sans-serif;
-	font-weight: 800;
-	color: black;
 	font-size: 1.2em;
 }
 
@@ -1098,16 +1018,6 @@ i.fa-info-circle{
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
-}
-
-.next_section{
-	grid-area: following-sections;
-	font-family: 'Raleway',sans-serif;
-	font-weight: 800;
-	padding-left: 5px;
-	display: flex;
-	justify-content: flex-start;
-	align-items:center;
 }
 
 .hebergement_marseille_container img{
@@ -1365,9 +1275,7 @@ input{
 	width: 130px;
 	border: none;
 }
-.button2{
-	display: none;
-}
+
 button:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
     transition: box-shadow 0.2s;
@@ -1376,9 +1284,6 @@ button:hover{
 
 .filtres{
 	width: 90%;
-	font-size: 0.9em;
-}
-.filtres h3{
 	font-size: 0.9em;
 }
 
@@ -1621,7 +1526,6 @@ display: none;
 
 .nav2 .nav-mobile-activite a:hover {
 padding-top: 0;
-border-top: none;
 }
 
 header{
@@ -1629,33 +1533,21 @@ header{
 }
 
 .nav2{
+	position: absolute;
+	border-top: none;
 	width: 93%;
 	display: grid;
 	justify-content: center;
 	align-items: center;
 	grid-template-columns: 45% 45%;
 	grid-template-rows: 40px 90px;
-	border-top: none;
 }
 
 .nav2 .nav-mobile-activite a:hover {
     border-top: none;
-	color: #0065FC;
 	font-weight: 600;
-	padding-left: 30px;
-    padding-right: 30px;
-}
-.nav2 .nav-mobile a{
-	font-weight: 600;
-	color: #0065FC;
-	display: flex;
-	justify-content: center;
 }
 
-.nav2{
-	position: absolute;
-	border-top: none;
-}
 .registration{
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
@@ -1684,7 +1576,12 @@ header{
     grid-row: 2 / 3;
     display: flex;
     margin-left: -50px;
-    margin-right: -50px;
+    margin-right: -20px;
+
+	justify-content: center;
+    border-top: none;
+    font-weight: 900;
+    border-bottom: 3px solid #0065FC;
 }
 
 .nav2 .nav-mobile-activite{
@@ -1711,21 +1608,27 @@ header{
 	flex-wrap: wrap;
 	margin: 0;
 }
+
 .nav2 a{
 	text-decoration: none;
-	border-top: none;
-	color:black;
 }
+
 .nav2 .nav-mobile a{
 	border-top: none;
 	font-size: 1.6em;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 66px;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
 }
 
 .nav2 .nav-mobile-activite a{
 	border-top: none;
+	font-size: 1.6em;
+	display: flex;
+	justify-content: center;
 	padding-left: 30px;
     padding-right: 30px;
 }
@@ -1739,52 +1642,35 @@ header{
 	margin-right: -20px;
 }
 
-.nav2 .nav-mobile-activite, .nav-mobile{
-	display: inline-flex;
-	border-top: none;
-}
-.nav-mobile-activite a{
-	font-size: 1.6em;
-	border-top: none;
-	display: flex;
-	justify-content: center;
-	}
 .nav-mobile-activite:hover{
 	border-top: none;
 	font-weight: 900;
 	width: 120%;
 	border-bottom: 3px solid #0065FC;
 }
-.nav-mobile{
-	display: flex;
-	justify-content: center;
-	border-top: none;
-	font-weight: 900;
-	border-bottom: 3px solid #0065FC;
+
+.search_zone_contenair{
+padding-top: 5rem;
 }
 
-	.search_zone_contenair{
-		padding-top: 5rem;
-	}
-
-	.submit
-	{
-		display: none;
-	}
-	.button2{
-		display: inline-block;
-		align-items: center;
-		text-align: center;
-		border-radius: 20px 20px 20px 20px;
-		font-family: 'Raleway', sans-serif;
-		font-weight: 500;
-		font-size: 1.5em;
-		height: 60px;
-		width: 60px;
-		background-color: #0065FC;
-		color: white;
-		border:none;
-	}
+.submit
+{
+display: none;
+}
+.button2{
+display: inline-block;
+align-items: center;
+text-align: center;
+border-radius: 20px 20px 20px 20px;
+font-family: 'Raleway', sans-serif;
+font-weight: 500;
+font-size: 1.5em;
+height: 60px;
+width: 60px;
+background-color: #0065FC;
+color: white;
+border:none;
+}
 
 	.barre_recherche{
 		width: 100%;
@@ -1834,10 +1720,6 @@ font-size: 1em;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-}
-
-.filtres h3{
-	font-size: 1em;
 }
 
 .budget{
@@ -2180,24 +2062,18 @@ padding-bottom: 2%;
 }
 
 .activites-container-main ul{
-	width: 100%;
-	padding-top: 15em;
-	margin-bottom: 90%;
-	justify-content: center;
-	align-items: center;
-	display: grid;
-	grid-template-columns: repeat(1, 100%);
-	grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-auto-rows: auto;
-	grid-template-areas: 
-	"z"
-	"a"
-	"b"
-	"f"
-	"d"
-	"e" 
-	"c";
-}
+		padding-top: 18em;
+		margin-bottom: 90%;
+		grid-template-columns: repeat(1, 100%);
+		grid-template-areas:
+			"z"
+			"a"
+			"b"
+			"f"
+			"d"
+			"e"
+			"c";
+	}
 
 #vieux_port{
 	height: 180px;
@@ -2270,7 +2146,7 @@ display: flex;
 justify-content: center;
 }
 
-.nav-mobile-activite a{
+.nav2 .nav-mobile-activite a{
 font-size: 1.2em;
 border-top: none;
 }
