@@ -716,11 +716,15 @@ li img{
 }
 #pomegues{
 	width: 100%;
-	height: 300px;
-	display: block;
+	height: 400px;
+	/*display: block;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: flex-end;*/
 }
+#pomegues, #Frioul{
+	display: block;
+}
+
 #Frioul{
 	height: 240px;
 	width: 100%;
@@ -731,9 +735,9 @@ li img{
 }
 #Notre-Dame{
 	height: 300px;
-	display: flex;
+	/*display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: flex-start;*/
 	width: 100%;
 }
 #Longchamp{
@@ -1946,13 +1950,8 @@ i.fa-chart-line{
 
 	li h3 {
 		font-size: 0.8em;
-		padding-left: 15px;
-		border-radius: 0 0 20px 20px;
-		border-top: none;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		height: 30px;}
+		height: 30px;
+	}
 
 	.room_available p {
 		position: relative;
@@ -1965,6 +1964,11 @@ i.fa-chart-line{
 		padding-bottom: 5%;
 		font-size: 0.8em;
 		display:block;
+	}
+
+	.hover_filter:hover, .hover_filter:focus {
+		background-color: white;
+		color: black;
 	}
 
 	.filtres h3{
