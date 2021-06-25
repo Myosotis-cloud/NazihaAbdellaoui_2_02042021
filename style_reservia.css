@@ -76,6 +76,7 @@ header
 	font-weight: 500;
 	padding-top: 80px;
 	border-bottom: none;
+	color: #0065FC;
 
 }
 
@@ -128,7 +129,7 @@ line-height: 200px;
 	line-height: 20px;
 }
 .head-title h1{
-	font-size: 1.9em;
+	font-size: 1.8em;
 	font-family: 'Raleway',sans-serif;
 	font-weight: 800;
 	padding-bottom: 0;
@@ -379,15 +380,15 @@ i.fa-info-circle{
 .hebergement_marseille_container {
     width: 100%;
     background-color: #F2F2F2;
-    row-gap: 3%;
+    row-gap: 2%;
     column-gap: 2%;
     justify-content: center;
     align-items: center;
-    padding-top: 4%;
+    padding-top: 2%;
     padding-bottom: 3%;
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: 100px 1fr 1fr 50px;
+    grid-template-rows: 70px 1fr 1fr 50px;
     grid-template-areas:
         "h2 h2 h2"
         "cannebiere port mouettes"
@@ -514,11 +515,11 @@ section a{
     display: grid;
     justify-content: center;
     background-color: #F2F2F2;
-    row-gap: 8%;
+    row-gap: 7%;
     border-radius: 20px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 8%;
+    padding-top: 2%;
     padding-bottom: 30%;
     grid-template-columns: 100%;
     grid-template-rows: 70px 1fr 1fr 1fr;
@@ -793,14 +794,15 @@ li h3{
 	font-family: 'Raleway',sans-serif;
 	font-weight: 800;
 	font-size: 1em;
-	padding-left: 15px;
+	padding-left: 5px;
 	border-radius: 0 0 20px 20px;
 	border-top: none;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	height: 70px;
+	height: 50px;
 }
+
 ul li a{
 	width: 100%;
 	display: block;
