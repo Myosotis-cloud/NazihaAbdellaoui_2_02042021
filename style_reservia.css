@@ -1,4 +1,8 @@
 body{
+	max-width: 1920px;
+}
+
+body{
 	max-width: unset !important;
 	margin: 0 0;
 	width: 100%;
@@ -166,7 +170,7 @@ line-height: 200px;
 	justify-content: flex-start;
 	border: 1px solid #F2F2F2;
 	height: 100px;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 20px 20px 20px 20px;
 }
 
 .hover_filter:hover,
@@ -483,8 +487,8 @@ section a{
 	border: white solid;
 	border-radius: 0 0 20px 20px;
 	margin: 0;
-	padding-left: 10px;
-	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-bottom: 5px;
 	background-color: white;
 	color: black;
 	display: flex;
@@ -550,27 +554,19 @@ section a{
 	display: inline-flex;
 }
 
-#populaire_carte_contenair1:hover{
+.hover-card:hover{
 	box-shadow: 0 0 6px 3px darkgrey;
 	border-radius: 20px 20px 20px 20px;
 	margin: auto;
 	padding: 0;
 }
-#populaire_carte_contenair1 i.fas{
+.fully_stars{
 	color: #0065FC;
 }
-#populaire_carte_contenair2 i.fas{
-	color: #0065FC;
-}
-#populaire_carte_contenair3 i.fas{
-	color: #0065FC;
-}
-.hotel_description i.fas{
-	color: #0065FC;
-}
-.hebergement i.far{
+.empty_stars{
 	color:darkgray;
 }
+
 #populaire_carte_contenair2{
 	width: 100%;
 	grid-column: 1 / 2;
@@ -580,12 +576,7 @@ section a{
 	justify-content: center;
 	align-items: flex-start;
 }
-#populaire_carte_contenair2:hover{
-	box-shadow: 0 0 6px 3px darkgrey;
-	border-radius: 20px 20px 20px 20px;
-	margin: auto;
-	padding: 0;
-}
+
 #populaire_carte_contenair3{
 	width: 100%;
 	grid-column: 1 / 2;
@@ -595,12 +586,7 @@ section a{
 	justify-content: center;
 	align-items: flex-start;
 }
-#populaire_carte_contenair3:hover{
-	box-shadow: 0 0 6px 3px darkgrey;
-	border-radius: 20px 20px 20px 20px;
-	margin: auto;
-	padding: 0;
-}
+
 .graph_icon{
 	display: inline-flex;
 	justify-content: space-between;
@@ -901,7 +887,7 @@ header
 	padding-left: 15px;
 	padding-right: 15px;
 	font-weight: 500;
-	padding-top: 43px;
+	padding-top: 42px;
 	border-bottom: none;
 }
 
@@ -916,7 +902,7 @@ header
 	font-weight: 500;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top: 43px;
+	padding-top: 42px;
 	border-bottom: none;
 }
 
@@ -1254,6 +1240,7 @@ footer h1{
 /* ****FIN HEADER****** */
 /* ****DEBUT FILTRES****** */
 .search_zone_contenair{
+	grid-template-columns: 100%;
     grid-template-rows: 60px 130px 1fr;
 }
 
@@ -1320,14 +1307,22 @@ section .hebergement-container-Main{
 	grid-template-columns: repeat(4, 25%);
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+.hebergement_marseille_container {
+    width: 100%;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 70px 180px 250px 50px;
+}
+
+
 
 .hebergement{
-	padding-top: 3%;
+grid-template-rows: 40rem;
 }
 
 .hebergement_marseille_container h2{
 	width: 100%;
 	font-size: 1.2em;
+	padding-top: 3%;
 }
 .next_section{
 	width: 100%;
@@ -1375,7 +1370,7 @@ aside h2{
 }
 
 aside h3{
-	font-size: 0.8em;
+	font-size: 0.7em;
 }
 
 i.fa-chart-line{
