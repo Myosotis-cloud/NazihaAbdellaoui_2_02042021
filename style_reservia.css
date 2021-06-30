@@ -40,7 +40,7 @@ header
 	width: 100%;
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-	font-size: 0.9em;
+	font-size: 1em;
 	grid-area: group-nav-container;
 	display: inline-flex;
 	justify-content: space-between;
@@ -890,7 +890,7 @@ header
 }
 
 .nav2{
-	font-size: 0.9em;
+	font-size: 1em;
 	height: 103px;
 	line-height: 103px;
 	border-bottom: none;
